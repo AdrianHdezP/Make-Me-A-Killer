@@ -2,15 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public enum Task
-{
-    Talk,
-    Phone,
-    Drink,
-    Dance,
-    Pee,
-}
-
 public class NPC : MonoBehaviour
 {
     #region Componets
@@ -28,8 +19,12 @@ public class NPC : MonoBehaviour
     public List<NPCState> states;
 
     public MoveState moveState { get; private set; }
+
     public PhoneState phoneState { get; private set; }
     public TalkState talkState { get; private set; }
+    public DrinkState drinkState { get; private set; }
+
+    public DeadState deadState { get; private set; }
 
     #endregion
 
@@ -39,13 +34,20 @@ public class NPC : MonoBehaviour
     public float talkStateTimeDuration;
     public int phoneStateProbability;
     public float phoneStateTimeDuration;
+    public int drinkStateProbability;
+    public float drinkStateTimeDuration;
 
     [HideInInspector] public NPCState nextState;
     [HideInInspector] public Targets targets;
+    [HideInInspector] public bool inyectedState;
+    [HideInInspector] public bool dead;
 
     #endregion
 
-    private void Awake()
+    //Cono de vision y que detecte cadaveres y culpable
+    //Audicion
+
+    private void Start()
     {
         #region Initialize States
 
@@ -55,16 +57,17 @@ public class NPC : MonoBehaviour
 
         talkState = new TalkState(this, stateMachine, "Talk", targets.talkTransform, talkStateProbability, talkStateTimeDuration);
         phoneState = new PhoneState(this, stateMachine, "Phone", targets.phoneTransform, phoneStateProbability, phoneStateTimeDuration);
+        drinkState = new DrinkState(this, stateMachine, "Drink", targets.drinkTransform, drinkStateProbability, drinkStateTimeDuration);
+
+        deadState = new DeadState(this, stateMachine, "Dead");
 
         states = new List<NPCState>();
         states.Add(talkState);
         states.Add(phoneState);
+        states.Add(drinkState);
 
         #endregion
-    }
 
-    private void Start()
-    {
         anim = GetComponentInChildren<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
@@ -77,23 +80,41 @@ public class NPC : MonoBehaviour
         stateMachine.currentState.Update();
     }
 
-    public void MoveToTarget() => agent.SetDestination(nextState.targetTransform.position);
+    public void MoveToTarget()
+    {
+        agent.SetDestination(nextState.targetTransform.position);
+
+        if ((agent.CalculatePath(nextState.targetTransform.position, agent.path) && agent.pathStatus == NavMeshPathStatus.PathComplete) == false)
+        {
+            //stateMachine.currentState.Enter();
+            stateMachine.ChangeState(moveState);
+        }
+    }
 
     public void SetNextTarget()
     {
         int randomProbability = Random.Range(0, 100);
         NPCState randomNPCState = states[Random.Range(0, states.Count)];
 
-        Debug.Log(randomProbability.ToString() + " - " + randomNPCState.stateProbability.ToString());
-
         if (randomProbability >= randomNPCState.stateProbability)
         {
             nextState = randomNPCState;
-            Debug.Log(nextState.ToString());
         }
         else
         {
             SetNextTarget();
         }
     }
+
+    public void InyectedState(NPCState newState)
+    {
+        if (dead)
+            return;
+
+        inyectedState = true;
+        stateMachine.ChangeState(moveState);
+        nextState = newState;
+    }
+
+    public void KillNPC() => stateMachine.ChangeState(deadState);   
 }

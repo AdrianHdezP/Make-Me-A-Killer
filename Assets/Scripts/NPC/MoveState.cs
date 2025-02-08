@@ -10,12 +10,15 @@ public class MoveState : NPCState
     {
         base.Enter();
 
-        NPC.SetNextTarget();
+        if (!NPC.inyectedState)
+            NPC.SetNextTarget();
     }
 
     public override void Exit()
     {
         base.Exit();
+
+        NPC.inyectedState = false;
     }
 
     public override void Update()
@@ -24,7 +27,7 @@ public class MoveState : NPCState
 
         NPC.MoveToTarget();
 
-        if (Vector2.Distance(NPC.transform.position, NPC.nextState.targetTransform.position) <= 0.5f)
+        if (Vector2.Distance(NPC.transform.position, NPC.nextState.targetTransform.position) <= NPC.agent.stoppingDistance + 0.5f)
             stateMachine.ChangeState(NPC.nextState);
     }
 }
