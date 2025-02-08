@@ -11,6 +11,7 @@ public class DeadState : NPCState
         base.Enter();
 
         NPC.dead = true;
+        NPC.agent.destination = NPC.transform.position;
     }
 
     public override void Exit()

@@ -56,7 +56,7 @@ MonoBehaviour:
   phoneAnim: {fileID: 4818257185147223331}
   audioSource: {fileID: 7637526777859897011}
   callLimits: {x: 2, y: 4}
-  callTimer: 10
+  callTimer: 5
 --- !u!82 &7637526777859897011
 AudioSource:
   m_ObjectHideFlags: 0

@@ -10,6 +10,8 @@ public class CasterTelephone : Caster
     [SerializeField] Vector2 callLimits;
     List<NPC> npcs = new();
 
+    bool called;
+
     [SerializeField] float callTimer;
     float t = 0;
 
@@ -39,37 +41,36 @@ public class CasterTelephone : Caster
             {
                 t += Time.deltaTime;
             }
-            else
+            else if (!called)
             {
+                called = true;
+
                 List<NPC> allNPCs = new();
 
                 foreach (NPC npc in FindObjectsByType<NPC>(FindObjectsSortMode.None))
                 {
                     if (!npc.CompareTag("Special")) allNPCs.Add(npc);
                 }
-
-                int added = 0;
+    
                 int amount = (int)Random.Range(callLimits.x, callLimits.y);
 
-                if (amount > allNPCs.Count) amount = allNPCs.Count - 1;
-
-                while (added < amount)
+                while (npcs.Count < amount && allNPCs.Count > 0)
                 {
-                    NPC npc = allNPCs[Random.Range(0, allNPCs.Count)];
+                    NPC npc = allNPCs [Random.Range(0, allNPCs.Count)];
 
                     if (!npcs.Contains(npc))
                     {
                         npcs.Add(npc);
-                        added++;
+                        allNPCs.Remove(npc);
                     }
                 }
 
-                for (int i = 0; i < npcs.Count;)
+                for (int i = 0; i < npcs.Count; i++)
                 {
                     npcs[i].InyectedState(npcs[i].phoneState);
                 }
 
-                Destroy(gameObject, 0.5f);
+                Destroy(gameObject, 2.5f);
             }
         }
     }

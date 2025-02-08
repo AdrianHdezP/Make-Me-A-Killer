@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: 0ab5ec41ae6a76a4d8c4ab8525bf3fcf
+guid: 10b7f57321dfda24e8555c53ad870137
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6205709071695368834
-    second: Pared_48x48Sheet_0
+      213: -3479610567507747976
+    second: Pared02_48x48Sheet_0
   - first:
-      213: 1152574363188635200
-    second: Pared_48x48Sheet_1
+      213: 8840763641266591163
+    second: Pared02_48x48Sheet_1
   - first:
-      213: -6512689913057189685
-    second: Pared_48x48Sheet_2
+      213: -4261576261352494037
+    second: Pared02_48x48Sheet_2
   - first:
-      213: -4506849051008227312
-    second: Pared_48x48Sheet_3
+      213: 3944841311852882192
+    second: Pared02_48x48Sheet_3
   - first:
-      213: 6424447460363375750
-    second: Pared_48x48Sheet_4
+      213: 1799554530939011793
+    second: Pared02_48x48Sheet_4
   - first:
-      213: -1737053532913760240
-    second: Pared_48x48Sheet_5
+      213: -8756641333560672379
+    second: Pared02_48x48Sheet_5
   - first:
-      213: 2082913788001520917
-    second: Pared_48x48Sheet_6
-  - first:
-      213: -951555083828480462
-    second: Pared_48x48Sheet_7
+      213: -5948016085264542924
+    second: Pared02_48x48Sheet_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -134,7 +131,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pared_48x48Sheet_0
+      name: Pared02_48x48Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -147,16 +144,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 28252dd758b1f1650800000000000000
-      internalID: 6205709071695368834
+      spriteID: 96c4b2c492ecfc642bff5442b7f77f3e
+      internalID: -1264236771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pared_48x48Sheet_1
+      name: Pared02_48x48Sheet_1
       rect:
         serializedVersion: 2
         x: 48
@@ -169,16 +166,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 046a417d644ceff00800000000000000
-      internalID: 1152574363188635200
+      spriteID: 3d29a1da871649e4dac07dc165068a9a
+      internalID: 657257728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pared_48x48Sheet_2
+      name: Pared02_48x48Sheet_2
       rect:
         serializedVersion: 2
         x: 96
@@ -191,16 +188,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bc0e4ff97074e95a0800000000000000
-      internalID: -6512689913057189685
+      spriteID: 00bcc3243abb81245b12552d3c084fb6
+      internalID: -2080735991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pared_48x48Sheet_3
+      name: Pared02_48x48Sheet_3
       rect:
         serializedVersion: 2
         x: 144
@@ -213,16 +210,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 018295a9aa47471c0800000000000000
-      internalID: -4506849051008227312
+      spriteID: c04bc0e37d56b444492149da19da391b
+      internalID: 1469125902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pared_48x48Sheet_4
+      name: Pared02_48x48Sheet_4
       rect:
         serializedVersion: 2
         x: 192
@@ -235,16 +232,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6849e115de8382950800000000000000
-      internalID: 6424447460363375750
+      spriteID: 8299f8cb77be85c4995e3e1604fd4f04
+      internalID: 1613375010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pared_48x48Sheet_5
+      name: Pared02_48x48Sheet_5
       rect:
         serializedVersion: 2
         x: 240
@@ -257,16 +254,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 01886ded30fb4e7e0800000000000000
-      internalID: -1737053532913760240
+      spriteID: fce6683ed65f334429a0e04ab28eb509
+      internalID: -74157025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pared_48x48Sheet_6
+      name: Pared02_48x48Sheet_6
       rect:
         serializedVersion: 2
         x: 288
@@ -279,16 +276,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 51d089fed0ff7ec10800000000000000
-      internalID: 2082913788001520917
+      spriteID: 28f04a371fadf684eb66174252a3cafb
+      internalID: 1666294968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pared_48x48Sheet_7
+      name: Pared02_48x48Sheet_7
       rect:
         serializedVersion: 2
         x: 336
@@ -301,16 +298,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 236bf2c51b56bc2f0800000000000000
-      internalID: -951555083828480462
+      spriteID: 2c7d59a3c8518d146bc347595322e25b
+      internalID: 1694141693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pared_48x48Sheet_8
+      name: Pared02_48x48Sheet_8
       rect:
         serializedVersion: 2
         x: 384
@@ -325,14 +322,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fcf4941c6294654bb76cb26c8bac009
-      internalID: 107267810
+      spriteID: b0050f21d45a84042897b9fdc217c39a
+      internalID: 1718658260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pared_48x48Sheet_9
+      name: Pared02_48x48Sheet_9
       rect:
         serializedVersion: 2
         x: 432
@@ -347,14 +344,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09baa599e8ab2d5409d2ad50510f5b45
-      internalID: -587786037
+      spriteID: 95f043bb41619df4d94576064a44705f
+      internalID: -1835665820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pared_48x48Sheet_10
+      name: Pared02_48x48Sheet_10
       rect:
         serializedVersion: 2
         x: 480
@@ -369,14 +366,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cbf1ca94ff8bbc4eb91e468f7c4d011
-      internalID: 1867505197
+      spriteID: 799555289722ae34b94df9bf40e85b2a
+      internalID: -1588785031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pared_48x48Sheet_11
+      name: Pared02_48x48Sheet_11
       rect:
         serializedVersion: 2
         x: 528
@@ -391,8 +388,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b28744414f95558418123e0cefb8e798
-      internalID: 836898296
+      spriteID: 62c2f92743a81de448de52a32a0a0077
+      internalID: -615506116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pared02_48x48Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2fb42d9770bf54d9eb2b41c78d8e42
+      internalID: -94845264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pared02_48x48Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d397491952c724dba0f6be91c9ebdc
+      internalID: 17203152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pared02_48x48Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5707f856d86c190438755b5f26881535
+      internalID: 1304839393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pared02_48x48Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec42e0dc29de9546865069c7b60a62e
+      internalID: -566085706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pared02_48x48Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288a7079d1fed184ca06798946beae43
+      internalID: -1707425425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pared02_48x48Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5760fa50a2b864e9b9d69a719c9774
+      internalID: -1258198268
       vertices: []
       indices: 
       edges: []
@@ -401,7 +530,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 80760d25fa454084dabe2616a7639d51
+    spriteID: be527708a2057db4e9f7f76720c72045
     internalID: 0
     vertices: []
     indices: 
@@ -411,18 +540,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pared_48x48Sheet_0: 6205709071695368834
-      Pared_48x48Sheet_1: 1152574363188635200
-      Pared_48x48Sheet_10: 1867505197
-      Pared_48x48Sheet_11: 836898296
-      Pared_48x48Sheet_2: -6512689913057189685
-      Pared_48x48Sheet_3: -4506849051008227312
-      Pared_48x48Sheet_4: 6424447460363375750
-      Pared_48x48Sheet_5: -1737053532913760240
-      Pared_48x48Sheet_6: 2082913788001520917
-      Pared_48x48Sheet_7: -951555083828480462
-      Pared_48x48Sheet_8: 107267810
-      Pared_48x48Sheet_9: -587786037
+      Pared02_48x48Sheet_0: -1264236771
+      Pared02_48x48Sheet_1: 657257728
+      Pared02_48x48Sheet_10: -1588785031
+      Pared02_48x48Sheet_11: -615506116
+      Pared02_48x48Sheet_12: -94845264
+      Pared02_48x48Sheet_13: 17203152
+      Pared02_48x48Sheet_14: 1304839393
+      Pared02_48x48Sheet_15: -566085706
+      Pared02_48x48Sheet_16: -1707425425
+      Pared02_48x48Sheet_17: -1258198268
+      Pared02_48x48Sheet_2: -2080735991
+      Pared02_48x48Sheet_3: 1469125902
+      Pared02_48x48Sheet_4: 1613375010
+      Pared02_48x48Sheet_5: -74157025
+      Pared02_48x48Sheet_6: 1666294968
+      Pared02_48x48Sheet_7: 1694141693
+      Pared02_48x48Sheet_8: 1718658260
+      Pared02_48x48Sheet_9: -1835665820
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

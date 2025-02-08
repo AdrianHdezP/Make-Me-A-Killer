@@ -41,7 +41,7 @@ public class NPC : MonoBehaviour
     [HideInInspector] public Targets targets;
     [HideInInspector] public bool inyectedState;
     [HideInInspector] public bool dead;
-    [HideInInspector] public int hidden; // IF == 0 not hidden, si > 0 hidden
+    public int hidden; // IF == 0 not hidden, si > 0 hidden
 
     #endregion
 
