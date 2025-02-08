@@ -8,7 +8,6 @@ public class NPC : MonoBehaviour
 
     public Animator anim {  get; private set; }
     public NavMeshAgent agent { get; private set; }
-    public NPCView NPCView { get; private set; }
 
     #endregion
 
@@ -71,16 +70,12 @@ public class NPC : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-        NPCView = GetComponentInChildren<NPCView>();    
         stateMachine.Initialize(moveState);
     }
 
     private void Update()
     {
         stateMachine.currentState.Update();
-
-        if (agent.velocity.magnitude > 0)
-            anim.transform.up = agent.velocity.normalized;
     }
 
     public void MoveToTarget()
