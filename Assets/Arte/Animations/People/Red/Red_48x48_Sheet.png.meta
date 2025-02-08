@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: f665c7b182236ff4db32d9550062cc76
+guid: 4ff2c7f9a32a1cb428e751696810c5e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6528315353269722923
-    second: Person02_48x48_Sheet_0
+      213: 2368447477916376832
+    second: Red_48x48_Sheet_0
   - first:
-      213: 1268430709756021462
-    second: Person02_48x48_Sheet_1
+      213: 1652157888203784745
+    second: Red_48x48_Sheet_1
   - first:
-      213: 8417805681198673894
-    second: Person02_48x48_Sheet_2
+      213: -3891293742697745197
+    second: Red_48x48_Sheet_2
   - first:
-      213: 8163948399842955212
-    second: Person02_48x48_Sheet_3
+      213: -3554891687657496243
+    second: Red_48x48_Sheet_3
   - first:
-      213: -6621191342959973691
-    second: Person02_48x48_Sheet_4
+      213: 1516943143662361489
+    second: Red_48x48_Sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Person02_48x48_Sheet_0
+      name: Red_48x48_Sheet_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 14
-        width: 34
-        height: 20
+        x: 0
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d021a256c3c665a0800000000000000
-      internalID: -6528315353269722923
+      spriteID: 00f106ebe6a6ed020800000000000000
+      internalID: 2368447477916376832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Person02_48x48_Sheet_1
+      name: Red_48x48_Sheet_1
       rect:
         serializedVersion: 2
-        x: 55
-        y: 11
-        width: 34
-        height: 28
+        x: 48
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6da4435920f5a9110800000000000000
-      internalID: 1268430709756021462
+      spriteID: 9220f3788d4ade610800000000000000
+      internalID: 1652157888203784745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Person02_48x48_Sheet_2
+      name: Red_48x48_Sheet_2
       rect:
         serializedVersion: 2
-        x: 103
-        y: 11
-        width: 34
-        height: 28
+        x: 96
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6efac18eaad02d470800000000000000
-      internalID: 8417805681198673894
+      spriteID: 3d4fccd35f85ff9c0800000000000000
+      internalID: -3891293742697745197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Person02_48x48_Sheet_3
+      name: Red_48x48_Sheet_3
       rect:
         serializedVersion: 2
-        x: 147
-        y: 11
-        width: 39
-        height: 35
+        x: 144
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ccf0241b0db2c4170800000000000000
-      internalID: 8163948399842955212
+      spriteID: d41af2e38dc7aaec0800000000000000
+      internalID: -3554891687657496243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Person02_48x48_Sheet_4
+      name: Red_48x48_Sheet_4
       rect:
         serializedVersion: 2
-        x: 194
-        y: 2
-        width: 45
-        height: 45
+        x: 192
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5caaafcdd8dcc14a0800000000000000
-      internalID: -6621191342959973691
+      spriteID: 19b957680c34d0510800000000000000
+      internalID: 1516943143662361489
       vertices: []
       indices: 
       edges: []
@@ -238,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2707bc35ccffaea48bfebe02a5ca3438
     internalID: 0
     vertices: []
     indices: 
@@ -248,11 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Person02_48x48_Sheet_0: -6528315353269722923
-      Person02_48x48_Sheet_1: 1268430709756021462
-      Person02_48x48_Sheet_2: 8417805681198673894
-      Person02_48x48_Sheet_3: 8163948399842955212
-      Person02_48x48_Sheet_4: -6621191342959973691
+      Red_48x48_Sheet_0: 2368447477916376832
+      Red_48x48_Sheet_1: 1652157888203784745
+      Red_48x48_Sheet_2: -3891293742697745197
+      Red_48x48_Sheet_3: -3554891687657496243
+      Red_48x48_Sheet_4: 1516943143662361489
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

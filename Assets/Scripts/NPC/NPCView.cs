@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCView : MonoBehaviour
@@ -6,22 +7,24 @@ public class NPCView : MonoBehaviour
     [SerializeField] private GameObject NPCCollider;
 
     private Mesh mesh;
-    private Vector3 origin;
-    private float startingAngle;
     private float fov;
+    private List<NPC> seenNPC = new List<NPC>();
 
     private void Start()
     {
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
-        origin = Vector3.zero;
         fov = 90f;
     }
 
-    private void Update()
+    private void LateUpdate()
     {   
+        if (NPCCollider.GetComponent<NPC>().dead)
+            return;
+
+        seenNPC.Clear();
         int rayCount = 50;
-        float angle = startingAngle;
+        float angle = GetAngleFromVectorFloat(transform.up) - fov / 2f;
         float angleIncrease = fov / rayCount;
         float viewDistance = 5f;
 
@@ -29,7 +32,7 @@ public class NPCView : MonoBehaviour
         Vector2[] uv = new Vector2[vertices.Length];
         int[] triangles = new int[rayCount * 3];
 
-        vertices[0] = origin;
+        vertices[0] = Vector3.zero;
         int vertexIndex = 1;
         int triangleIndex = 0;
 
@@ -37,7 +40,7 @@ public class NPCView : MonoBehaviour
         {
             Vector3 vertex;
 
-            RaycastHit2D[] raycastHit2D = Physics2D.RaycastAll(origin, GetVectorFromAngle(angle), viewDistance, layerMask);
+            RaycastHit2D[] raycastHit2D = Physics2D.RaycastAll(transform.position, GetVectorFromAngle(angle), viewDistance, layerMask);
             RaycastHit2D myRaycastHit2D = new RaycastHit2D();
             int raycastIndex = 0;
 
@@ -46,17 +49,21 @@ public class NPCView : MonoBehaviour
                 if (ray.collider.gameObject != NPCCollider)
                 {
                     myRaycastHit2D = ray;
+                    
+                    if (myRaycastHit2D.collider.gameObject.GetComponent<NPC>())
+                        seenNPC.Add(myRaycastHit2D.collider.gameObject.GetComponent<NPC>());
+
                     break;
                 }
             }
 
             if (myRaycastHit2D.collider == null)
             {
-                vertex = origin + GetVectorFromAngle(angle) * viewDistance;
+                vertex = transform.InverseTransformDirection(GetVectorFromAngle(angle) * viewDistance);
             }
             else
             {
-                vertex = myRaycastHit2D.point;
+                vertex = transform.InverseTransformPoint(myRaycastHit2D.point);
             }
 
             vertices[vertexIndex] = vertex;
@@ -81,13 +88,6 @@ public class NPCView : MonoBehaviour
         mesh.vertices = vertices;
         mesh.uv = uv;
         mesh.triangles = triangles;
-    }
-
-    private void SetOrigin(Vector3 origin) => this.origin = origin;
-
-    private void SetAimDirection(Vector3 aimDirection)
-    {
-        startingAngle = GetAngleFromVectorFloat(aimDirection) - fov / 2f;
     }
 
     private Vector3 GetVectorFromAngle(float angle)
