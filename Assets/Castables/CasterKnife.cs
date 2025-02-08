@@ -48,7 +48,7 @@ public class CasterKnife : Caster
         placed = true;
         renderer_.color = placedColor;
 
-        for (int i = 0; i < npcs.Count;)
+        for (int i = 0; i < npcs.Count; i ++)
         {
             npcs[i].KillNPC();
         }

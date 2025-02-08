@@ -41,16 +41,21 @@ public class CasterTelephone : Caster
             }
             else
             {
-                NPC[] allNPCs = FindObjectsByType<NPC>(FindObjectsSortMode.None);
+                List<NPC> allNPCs = new();
+
+                foreach (NPC npc in FindObjectsByType<NPC>(FindObjectsSortMode.None))
+                {
+                    if (!npc.CompareTag("Special")) allNPCs.Add(npc);
+                }
 
                 int added = 0;
                 int amount = (int)Random.Range(callLimits.x, callLimits.y);
 
-                if (amount > allNPCs.Length) amount = allNPCs.Length;
+                if (amount > allNPCs.Count) amount = allNPCs.Count - 1;
 
                 while (added < amount)
                 {
-                    NPC npc = allNPCs[Random.Range(0, allNPCs.Length)];
+                    NPC npc = allNPCs[Random.Range(0, allNPCs.Count)];
 
                     if (!npcs.Contains(npc))
                     {
