@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mueble pared01_48x48_0: -6138629687985776723
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
