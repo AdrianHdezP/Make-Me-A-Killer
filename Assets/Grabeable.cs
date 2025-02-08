@@ -14,7 +14,7 @@ public class Grabeable : MonoBehaviour
     Vector3 startLocalPos;
 
     [SerializeField] float speedMultiplier;
-    Vector2 velocity;
+    public Vector2 velocity;
     Vector2 lastPos;
 
     TransformLerper lerper;
@@ -35,17 +35,17 @@ public class Grabeable : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (grabbed)
-        {
+       // if (grabbed)
+       // {
             velocity = ((Vector2)transform.position - lastPos) / Time.fixedDeltaTime;
             lastPos = transform.position;
-        }
-        else velocity = Vector2.zero;
+       // }
+       // else velocity = Vector2.zero;
     }
 
     public void StartGrab()
     {
-        if (!grabbed)
+        if (!grabbed && InvokeController.i.state != InvokeController.InvokeState.casting)
         {
             grabber = CursorController.i.transform;
             posOffset = grabber.position - grabbedObject.position;
@@ -95,5 +95,9 @@ public class Grabeable : MonoBehaviour
     void TiltCard()
     {
         lerper.targetRotation = Quaternion.AngleAxis(velocity.x * speedMultiplier, Vector3.forward) * Quaternion.AngleAxis(velocity.y * speedMultiplier, Vector3.up) * Quaternion.AngleAxis(velocity.x * speedMultiplier, Vector3.right);
+    }
+    public Quaternion TiltCardQuat()
+    {
+        return  Quaternion.AngleAxis(velocity.x * speedMultiplier, Vector3.forward) * Quaternion.AngleAxis(velocity.y * speedMultiplier, Vector3.up) * Quaternion.AngleAxis(velocity.x * speedMultiplier, Vector3.right);
     }
 }

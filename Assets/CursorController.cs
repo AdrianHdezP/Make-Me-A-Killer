@@ -34,7 +34,7 @@ public class CursorController : MonoBehaviour
     PointerEventData m_PointerEventData;
 
     [Header("Settings")]
-    [SerializeField] float sensibility;
+    public float sensibility;
     [SerializeField] float dragThreshold;
     [SerializeField] float holdTime;
     [SerializeField] float doubleClickTime;
@@ -86,6 +86,8 @@ public class CursorController : MonoBehaviour
             current = null;
             holding = false;
         }
+
+        RaycastControl();
 
         if (holding && !current) holding = false;
 
@@ -216,6 +218,20 @@ public class CursorController : MonoBehaviour
     {
         if (clickT < doubleClickTime) clickT += Time.deltaTime;
         else clicked = false;
+    }
+
+    void RaycastControl()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward);
+
+        if (hit.collider)
+        {
+            if (hit.collider.TryGetComponent(out Raycaster rayCaster))
+            {
+                if (image.sprite != interactableSprite) SetCursorSprite(1);
+                if (Input.GetKeyDown(KeyCode.Mouse0)) rayCaster.OnPointerDown.Invoke();
+            }
+        }
     }
 
 

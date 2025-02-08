@@ -70,11 +70,11 @@ public class CardHolder : MonoBehaviour
 
             if (list[i] != selectedDisk)
             {
-                list[i].targetRotation = Quaternion.LookRotation(Vector3.forward, (list[i].transform.position - displayTransform.position).normalized);
+                list[i].targetRotation = Quaternion.LookRotation(Vector3.forward, (list[i].transform.position - displayTransform.position).normalized) * list[i].GetComponent<Grabeable>().TiltCardQuat();
             }
             else
             {
-                list[i].targetRotation = displayTransform.rotation * Quaternion.Euler(selectedRot);
+                list[i].targetRotation = displayTransform.rotation * Quaternion.Euler(selectedRot) * list[i].GetComponent<Grabeable>().TiltCardQuat();
             }
         }
     }

@@ -18,7 +18,7 @@ public class ScreenController : MonoBehaviour
     {
         GetScreenSize();
     }
-    void GetScreenSize()
+    public void GetScreenSize()
     {
         RectTransform parent = GetComponent<RectTransform>();
 
