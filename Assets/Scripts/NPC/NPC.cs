@@ -45,9 +45,6 @@ public class NPC : MonoBehaviour
 
     #endregion
 
-    //Cono de vision y que detecte cadaveres y culpable
-    //Audicion
-
     private void Start()
     {
         #region Initialize States
@@ -115,6 +112,7 @@ public class NPC : MonoBehaviour
         inyectedState = true;
         stateMachine.ChangeState(moveState);
         nextState = newState;
+        Debug.Log("Te inyecto");
     }
 
     public void KillNPC() => stateMachine.ChangeState(deadState);   

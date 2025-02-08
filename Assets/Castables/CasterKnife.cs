@@ -53,6 +53,6 @@ public class CasterKnife : Caster
             npcs[i].KillNPC();
         }
 
-        Destroy(gameObject, 0.2f);
+        Destroy(gameObject, 1f);
     }
 }
