@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7779857267590201296}
   - component: {fileID: 8250274633846078295}
   m_Layer: 5
-  m_Name: _SmokeCard 1
+  m_Name: _SmokeCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

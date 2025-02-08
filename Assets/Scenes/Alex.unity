@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UseDebugs: 0
-  state: 4
+  state: 1
   OnPointerEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -1712,6 +1712,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 18.525
       objectReference: {fileID: 0}
+    - target: {fileID: 6494027003994923924, guid: 53876e0992aa0f54aa52bb418719dd86, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7095020384623888374, guid: 53876e0992aa0f54aa52bb418719dd86, type: 3}
       propertyPath: m_Name
       value: _CarpetCard
@@ -1773,10 +1777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSprite: {fileID: -1551796626, guid: 11215c139b96d6b468fa0c33e58a5997, type: 3}
   interactableSprite: {fileID: 1608364255, guid: 11215c139b96d6b468fa0c33e58a5997, type: 3}
-  lockedSprite: {fileID: 2013749700, guid: 11215c139b96d6b468fa0c33e58a5997, type: 3}
-  unknownSprite: {fileID: 1777579038, guid: 11215c139b96d6b468fa0c33e58a5997, type: 3}
-  dangerSprite: {fileID: -2098406309, guid: 11215c139b96d6b468fa0c33e58a5997, type: 3}
-  inputFieldSprite: {fileID: -1060027009, guid: 11215c139b96d6b468fa0c33e58a5997, type: 3}
+  dragSprite: {fileID: 1777579038, guid: 11215c139b96d6b468fa0c33e58a5997, type: 3}
   current: {fileID: 0}
   m_Raycaster: {fileID: 1901707921}
   m_EventSystem: {fileID: 1010494280}
@@ -1986,7 +1987,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!224 &1901707924
 RectTransform:

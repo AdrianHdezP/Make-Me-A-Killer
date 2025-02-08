@@ -9,20 +9,14 @@ public class CursorController : MonoBehaviour
     [Header("Sprites")]
     public Sprite defaultSprite;
     public Sprite interactableSprite;
-    public Sprite lockedSprite;
-    public Sprite unknownSprite;
-    public Sprite dangerSprite;
-    public Sprite inputFieldSprite;
+    public Sprite dragSprite;
 
     [SerializeField] Interactable current;
     Interactable lastInteractable;
     public enum EventStates
     {
         interactable,
-        inputField,
-        locked,
-        danger,
-        unknown,
+        drag,
         ignore
     }
 
@@ -94,10 +88,7 @@ public class CursorController : MonoBehaviour
         if (current && current.state != EventStates.ignore)
         {
             if (current.state == EventStates.interactable && activeIndex != 1) SetCursorSprite(1);
-            else if (current.state == EventStates.locked && activeIndex != 2) SetCursorSprite(2);
-            else if (current.state == EventStates.unknown && activeIndex != 3) SetCursorSprite(3);
-            else if (current.state == EventStates.danger && activeIndex != 4) SetCursorSprite(4);
-            else if (current.state == EventStates.inputField && activeIndex != 5) SetCursorSprite(5);
+            else if (current.state == EventStates.drag && activeIndex != 2) SetCursorSprite(2);
         }
         else if (activeIndex != 0 && (!current || current.state == EventStates.ignore)) SetCursorSprite(0);
     }
@@ -249,13 +240,7 @@ public class CursorController : MonoBehaviour
             case 1:
                 selectedSprite = interactableSprite; break;
             case 2:
-                selectedSprite = lockedSprite; break;
-            case 3:
-                selectedSprite = unknownSprite; break;
-            case 4:
-                selectedSprite = dangerSprite; break;
-            case 5:
-                selectedSprite = inputFieldSprite; break;
+                selectedSprite = dragSprite; break;
             default:
                 selectedSprite = defaultSprite; break;
 
