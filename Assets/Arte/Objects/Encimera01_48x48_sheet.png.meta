@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Encimera01_48x48_sheet_0: -396456562350743837
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

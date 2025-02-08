@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ObstacleCard_0: 5843841730469908773
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Person04_48x48_Sheet_0: 116808926010831749
+      Person04_48x48_Sheet_1: 4602096236236211811
+      Person04_48x48_Sheet_2: -2088597272544112299
+      Person04_48x48_Sheet_3: -221957956391342348
+      Person04_48x48_Sheet_4: -4635067835073812312
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

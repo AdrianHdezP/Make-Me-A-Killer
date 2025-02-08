@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Taza_0: -4225042675302554141
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
