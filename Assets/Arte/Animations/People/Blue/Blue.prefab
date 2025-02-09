@@ -317,6 +317,7 @@ MonoBehaviour:
   bodyTarget: {fileID: 0}
   determine: 0
   alert: 0
+  bloqMovement: 0
   dead: 0
   hidden: 0
   win: 0
@@ -1235,7 +1236,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: e620bfad1fe3ac240844f364c1574fdf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

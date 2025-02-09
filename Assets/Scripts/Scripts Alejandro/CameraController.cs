@@ -6,6 +6,8 @@ public class CameraController : MonoBehaviour
     [SerializeField] float zoomZensibility;
     [SerializeField] Vector2 zoomLimits;
 
+    [SerializeField] float moveSpeed;
+
     ScreenController screenController;
     bool draging;
 
@@ -19,12 +21,30 @@ public class CameraController : MonoBehaviour
     private void Update()
     {
         if (draging) Drag();
+        else Move();
 
-       // if (Input.GetAxis("Mouse ScrollWheel") != 0)
-       // {
-       //     Zoom(Input.GetAxis("Mouse ScrollWheel") * zoomZensibility * Time.deltaTime);
-       // }
-       // transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, targetZoom, Time.deltaTime * zoomSpeed));
+
+        //  if (Input.GetAxis("Mouse ScrollWheel") != 0)
+        //  {
+        //      Zoom(Input.GetAxis("Mouse ScrollWheel") * zoomZensibility * Time.deltaTime);
+        //  }
+        //
+        //  transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, targetZoom, Time.deltaTime * zoomSpeed));
+    }
+
+    void Move()
+    {
+        float xKeys = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        float yKeys = Input.GetAxisRaw("Vertical") * moveSpeed;
+
+        Vector3 newPos = transform.position;
+
+        newPos.x += xKeys;
+        newPos.y += yKeys;
+
+        transform.position = newPos;
+
+        screenController.GetScreenSize();
     }
 
     void Drag()

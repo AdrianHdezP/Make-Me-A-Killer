@@ -1,6 +1,7 @@
 using NavMeshPlus.Components;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEngine.Rendering.GPUSort;
 
 public class InvokeController : MonoBehaviour
 {
@@ -9,6 +10,15 @@ public class InvokeController : MonoBehaviour
     [SerializeField] AudioSource errorSound;
     [SerializeField] Transform returnToDeckTf;
     public CardHolder cardHolder;
+
+    [Header("CARDS")]
+    [SerializeField] int cardNumber;
+    [SerializeField] Card[] cards;
+
+    [SerializeField] float[] cardOdds;
+    [SerializeField] bool fixOdds;
+
+    public InvokeState state;
 
 
     public static InvokeController i;
@@ -19,7 +29,6 @@ public class InvokeController : MonoBehaviour
         casting,
     }
 
-    public InvokeState state;
     Caster currentCast;
     Card currentCard;
 
@@ -28,12 +37,76 @@ public class InvokeController : MonoBehaviour
         i = this;
 
         returnToDeckTf.transform.position = new Vector3(returnToDeckTf.transform.position.x, returnToDeckTf.transform.position.y, 0);
-        returnToDeckTf.gameObject.SetActive(false);
+        //returnToDeckTf.gameObject.SetActive(false);
+    }
+
+    private void OnValidate()
+    {
+        if (fixOdds)
+        {
+            float[] oldOdds = cardOdds;
+            float totalAmount = 0;
+
+            foreach (float odd in oldOdds)
+            {
+                totalAmount += odd;
+            }
+
+            for (int i = 0; i < cardOdds.Length; i++)
+            {
+                cardOdds[i] = oldOdds[i] / totalAmount * 100;
+            }
+
+            fixOdds = false;
+        }
+    }
+
+    private void Start()
+    {
+        GenerateCards();
     }
 
     private void Update()
     {
         if (state == InvokeState.casting && currentCast != null) CastObstucle();
+    }
+
+    [ContextMenu("GENERATE")]
+    public void GenerateCards()
+    {
+        foreach (Transform tf in cardHolder.GetComponentInChildren<Transform>())
+        {
+            if (tf != cardHolder.transform) Destroy(tf.gameObject);
+        }
+
+
+        for (int i = 0; i <= cardNumber; i++)
+        {
+            if (i == 0)
+            {
+                Instantiate(cards[0], cardHolder.transform);
+                i++;
+            }
+            else
+            {
+                float r = Random.Range(0, 100f);
+                float currentOdds = cardOdds[0];
+
+                for (int e = 0; e < cards.Length; e++)
+                {
+                    if (r <= currentOdds)
+                    {
+                        Instantiate(cards[e], cardHolder.transform);
+                        break;
+                    }
+                    else if (e+1 < cards.Length) currentOdds += cardOdds[e+1];
+                    else
+                    {
+                        Instantiate(cards[cards.Length-1], cardHolder.transform);
+                    }
+                }
+            }
+        }
     }
 
     void CastObstucle()
@@ -95,6 +168,6 @@ public class InvokeController : MonoBehaviour
             Debug.Log("CANT BE PLACED HERE!!");
         }
 
-        returnToDeckTf.gameObject.SetActive(false);
+        //returnToDeckTf.gameObject.SetActive(false);
     }
 }
