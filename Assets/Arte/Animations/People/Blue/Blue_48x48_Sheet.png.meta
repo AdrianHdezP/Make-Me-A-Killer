@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,10 +131,10 @@ TextureImporter:
       name: Blue_48x48_Sheet_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 14
-        width: 34
-        height: 20
+        x: 0
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,19 +153,19 @@ TextureImporter:
       name: Blue_48x48_Sheet_1
       rect:
         serializedVersion: 2
-        x: 55
-        y: 11
-        width: 34
-        height: 28
+        x: 48
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04b9afd8e129dd3a0800000000000000
+      spriteID: ea48238e9caacf2458f03aaccc50af50
       internalID: -6638989615745557696
       vertices: []
       indices: 
@@ -175,19 +175,19 @@ TextureImporter:
       name: Blue_48x48_Sheet_2
       rect:
         serializedVersion: 2
-        x: 103
-        y: 11
-        width: 34
-        height: 28
+        x: 96
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f18ee51b019c590c0800000000000000
+      spriteID: 82845f2b51a409e4d973b85bef847fb5
       internalID: -4569525173365053409
       vertices: []
       indices: 
@@ -197,19 +197,19 @@ TextureImporter:
       name: Blue_48x48_Sheet_3
       rect:
         serializedVersion: 2
-        x: 147
-        y: 11
-        width: 39
-        height: 35
+        x: 144
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5d2e32c0e49e46480800000000000000
+      spriteID: f6d84e8cd0de7e4418449bca36fc50f9
       internalID: -8906737641611599147
       vertices: []
       indices: 
@@ -219,19 +219,19 @@ TextureImporter:
       name: Blue_48x48_Sheet_4
       rect:
         serializedVersion: 2
-        x: 194
-        y: 2
-        width: 45
-        height: 45
+        x: 192
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fec9d2762d9bbca90800000000000000
+      spriteID: 5472cf36ed514844281d8459b40b332f
       internalID: -7292530858271073041
       vertices: []
       indices: 
@@ -241,19 +241,19 @@ TextureImporter:
       name: Blue_48x48_Sheet_5
       rect:
         serializedVersion: 2
-        x: 242
+        x: 240
         y: 0
-        width: 45
-        height: 47
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b225356a0a8c2c070800000000000000
+      spriteID: a29bfd09cae0df14382a1738c2aedfad
       internalID: 8125277270040597035
       vertices: []
       indices: 
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 92ff50983d619ed4db8b9ffa47882726
     internalID: 0
     vertices: []
     indices: 
