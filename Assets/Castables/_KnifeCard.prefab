@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 694cbeb5380f5e443b80a1c46b873ff9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseDebugs: 1
+  UseDebugs: 0
   state: 0
   OnPointerEnter:
     m_PersistentCalls:

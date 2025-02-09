@@ -25,9 +25,19 @@ public class MoveState : NPCState
     {
         base.Update();
 
-        NPC.MoveToTarget();
+        if (NPC.examinate)
+        {
+            NPC.MoveToTarget(NPC.bodyTarget);
 
-        if (Vector2.Distance(NPC.transform.position, NPC.nextState.targetTransform.position) <= NPC.agent.stoppingDistance + 0.5f)
-            stateMachine.ChangeState(NPC.nextState);
+            if (Vector2.Distance(NPC.transform.position, NPC.bodyTarget) <= NPC.agent.stoppingDistance + 0.5f)
+                stateMachine.ChangeState(NPC.examinateBodyState);
+        }
+        else
+        {
+            NPC.MoveToTarget();
+
+            if (Vector2.Distance(NPC.transform.position, NPC.nextState.targetTransform.position) <= NPC.agent.stoppingDistance + 0.5f)
+                stateMachine.ChangeState(NPC.nextState);
+        }
     }
 }

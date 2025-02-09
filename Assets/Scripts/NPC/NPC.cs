@@ -2,6 +2,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+public enum NPCType
+{
+    blue,
+    red,
+    normal
+}
+
 public class NPC : MonoBehaviour
 {
     #region Componets
@@ -24,12 +31,14 @@ public class NPC : MonoBehaviour
     public TalkState talkState { get; private set; }
     public DrinkState drinkState { get; private set; }
 
+    public ExaminateBodyState examinateBodyState { get; private set; }
     public DeadState deadState { get; private set; }
 
     #endregion
 
     #region Variables
 
+    public NPCType type;
     public int talkStateProbability;
     public float talkStateTimeDuration;
     public int phoneStateProbability;
@@ -40,6 +49,8 @@ public class NPC : MonoBehaviour
     [HideInInspector] public NPCState nextState;
     [HideInInspector] public Targets targets;
     [HideInInspector] public bool inyectedState;
+    [HideInInspector] public bool examinate;
+    [HideInInspector] public Vector2 bodyTarget;
     [HideInInspector] public bool dead;
     public int hidden; // IF == 0 not hidden, si > 0 hidden
 
@@ -57,6 +68,7 @@ public class NPC : MonoBehaviour
         phoneState = new PhoneState(this, stateMachine, "Phone", targets.phoneTransform, phoneStateProbability, phoneStateTimeDuration);
         drinkState = new DrinkState(this, stateMachine, "Drink", targets.drinkTransform, drinkStateProbability, drinkStateTimeDuration);
 
+        examinateBodyState = new ExaminateBodyState(this, stateMachine, "Examinate");
         deadState = new DeadState(this, stateMachine, "Dead");
 
         states = new List<NPCState>();
@@ -76,6 +88,17 @@ public class NPC : MonoBehaviour
     private void Update()
     {
         stateMachine.currentState.Update();
+<<<<<<< Updated upstream
+=======
+
+        if (dead && type == NPCType.red)
+        {
+            Debug.Log("Pierdes");
+        }
+
+        if (agent.velocity.magnitude > 0)
+            anim.transform.up = agent.velocity.normalized;
+>>>>>>> Stashed changes
     }
 
     public void MoveToTarget()
@@ -83,6 +106,17 @@ public class NPC : MonoBehaviour
         agent.SetDestination(nextState.targetTransform.position);
 
         if ((agent.CalculatePath(nextState.targetTransform.position, agent.path) && agent.pathStatus == NavMeshPathStatus.PathComplete) == false)
+        {
+            //stateMachine.currentState.Enter();
+            stateMachine.ChangeState(moveState);
+        }
+    }
+
+    public void MoveToTarget(Vector2 target)
+    {
+        agent.SetDestination(target);
+
+        if ((agent.CalculatePath(target, agent.path) && agent.pathStatus == NavMeshPathStatus.PathComplete) == false)
         {
             //stateMachine.currentState.Enter();
             stateMachine.ChangeState(moveState);
@@ -109,10 +143,15 @@ public class NPC : MonoBehaviour
         if (dead)
             return;
 
+        //if (newState == examinateBodyState)
+        //{
+        //    stateMachine.ChangeState(examinateBodyState);
+        //    return;
+        //}
+
         inyectedState = true;
         stateMachine.ChangeState(moveState);
         nextState = newState;
-        Debug.Log("Te inyecto");
     }
 
     public void KillNPC() => stateMachine.ChangeState(deadState);   
