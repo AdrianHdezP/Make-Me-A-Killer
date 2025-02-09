@@ -14,12 +14,12 @@ public class AlertState : NPCState
 
         if (NPC.win)
         {
-            Debug.Log("Ganas");
+            NPC.manager.LoadScene("Win");
         }
         
         if (NPC.loose)
         {
-            Debug.Log("Pierdes");
+            NPC.manager.LoadScene("Lose");
         }
     }
 

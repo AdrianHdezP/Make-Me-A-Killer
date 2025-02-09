@@ -23,6 +23,7 @@ public class NPC : MonoBehaviour
 
     public NPCStateMachine stateMachine {  get; private set; }
 
+    public SceneManager manager { get; private set; }
 
     public List<NPCState> states;
 
@@ -155,6 +156,7 @@ public class NPC : MonoBehaviour
 
         anim = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        manager = FindFirstObjectByType<SceneManager>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -173,7 +175,7 @@ public class NPC : MonoBehaviour
 
         if (dead && type == NPCType.red)
         {
-            Debug.Log("Pierdes");
+             manager.LoadScene("Lose");
         }
 
         if (agent.velocity.magnitude > 0)
