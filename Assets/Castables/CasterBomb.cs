@@ -58,7 +58,7 @@ public class CasterBomb : Caster
                     }
                 }
 
-                for (int i = 0; i < npcs.Count;)
+                for (int i = 0; i < npcs.Count; i++)
                 {
                     npcs[i].KillNPC();
                 }

@@ -90,7 +90,7 @@ public class NPCView : MonoBehaviour
 
         seenNPC.Clear();
         int rayCount = 50;
-        float angle = GetAngleFromVectorFloat(transform.InverseTransformDirection(transform.up)) - fov / 2f;
+        float angle = GetAngleFromVectorFloat(transform.up) - fov / 2f;
         float angleIncrease = fov / rayCount;
         float viewDistance = 5f;
 
@@ -106,7 +106,9 @@ public class NPCView : MonoBehaviour
         {
             Vector3 vertex;
 
-            RaycastHit2D[] raycastHit2D = Physics2D.RaycastAll(transform.position, transform.up, viewDistance, layerMask);
+            RaycastHit2D[] raycastHit2D = Physics2D.RaycastAll(transform.position, GetVectorFromAngle(angle), viewDistance, layerMask);
+            //Debug.DrawRay(transform.position, GetVectorFromAngle(angle) * viewDistance);
+
             RaycastHit2D myRaycastHit2D = new RaycastHit2D();
 
             foreach (var ray in raycastHit2D)
@@ -124,7 +126,7 @@ public class NPCView : MonoBehaviour
 
             if (myRaycastHit2D.collider == null)
             {
-                vertex = transform.InverseTransformPoint(GetVectorFromAngle(angle) * viewDistance);
+                vertex = transform.InverseTransformDirection(GetVectorFromAngle(angle) * viewDistance);
             }
             else
             {
