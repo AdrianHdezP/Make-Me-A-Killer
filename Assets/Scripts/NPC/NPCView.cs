@@ -89,7 +89,7 @@ public class NPCView : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (npc.dead)
+        if (npc.dead || npc.type == NPCType.red && npc.examinate || npc.alert)
             Destroy(mesh);
 
         seenNPC.Clear();
@@ -163,7 +163,7 @@ public class NPCView : MonoBehaviour
         triangles[1] = 1;
         triangles[2] = 2;
 
-        if (!npc.dead)
+        if (mesh != null)
         {
             mesh.vertices = vertices;
             mesh.uv = uv;
