@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1740020265046305290}
   - component: {fileID: 6299265553944533934}
   - component: {fileID: 5655909756300308618}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Blue
   m_TagString: Special
   m_Icon: {fileID: 0}
@@ -114,6 +114,8 @@ MonoBehaviour:
   phoneStateTimeDuration: 1
   drinkStateProbability: 0
   drinkStateTimeDuration: 1
+  danceStateProbability: 0
+  danceStateTimeDuration: 0
   targets: {fileID: 0}
   inyectedState: 0
   examinate: 0
@@ -132,7 +134,7 @@ GameObject:
   - component: {fileID: 1764216543615179274}
   - component: {fileID: 4336485566680940441}
   - component: {fileID: 7570925895981862751}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +184,7 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
@@ -221,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 503
   NPCCollider: {fileID: 843604866350362607}
 --- !u!1 &8201281877646086500
 GameObject:

@@ -56,8 +56,8 @@ public class CasterBoomBox : Caster
                     {
                         npcs.Add(allNPCs[i]);
 
-                        DanceState talkState = new DanceState(allNPCs[i], allNPCs[i].stateMachine, "Idle", transform, 100, musicTimer - t);
-                        allNPCs[i].InyectedState(talkState);
+                        DanceState danceState = new DanceState(allNPCs[i], allNPCs[i].stateMachine, "Idle", transform, 100, musicTimer - t);
+                        allNPCs[i].InyectedState(danceState);
                     }
                 }
 
