@@ -88,8 +88,6 @@ public class NPC : MonoBehaviour
     private void Update()
     {
         stateMachine.currentState.Update();
-<<<<<<< Updated upstream
-=======
 
         if (dead && type == NPCType.red)
         {
@@ -98,7 +96,6 @@ public class NPC : MonoBehaviour
 
         if (agent.velocity.magnitude > 0)
             anim.transform.up = agent.velocity.normalized;
->>>>>>> Stashed changes
     }
 
     public void MoveToTarget()

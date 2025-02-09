@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCView : MonoBehaviour
@@ -11,7 +13,7 @@ public class NPCView : MonoBehaviour
     private Vector3 origin;
     private float startingAngle;
     private float fov;
-
+    private List<NPC> seenNPC = new List<NPC>();
 
 
     private void Start()
@@ -19,10 +21,6 @@ public class NPCView : MonoBehaviour
         npc = GetComponentInParent<NPC>();
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
-<<<<<<< Updated upstream
-        origin = Vector3.zero;
-        fov = 90f;
-=======
         fov = 120f;
     }
 
@@ -83,18 +81,14 @@ public class NPCView : MonoBehaviour
                 }
             }
         }
->>>>>>> Stashed changes
     }
 
-    private void Update()
+    private void LateUpdate()
     {   
-<<<<<<< Updated upstream
-=======
         if (npc.dead)
             return;
 
         seenNPC.Clear();
->>>>>>> Stashed changes
         int rayCount = 50;
         float angle = startingAngle;
         float angleIncrease = fov / rayCount;
@@ -120,13 +114,10 @@ public class NPCView : MonoBehaviour
                 if (ray.collider.gameObject != NPCCollider)
                 {
                     myRaycastHit2D = ray;
-<<<<<<< Updated upstream
-=======
                     
                     if (myRaycastHit2D.collider.gameObject.GetComponent<NPC>() && !seenNPC.Contains(myRaycastHit2D.collider.gameObject.GetComponent<NPC>()))
                         seenNPC.Add(myRaycastHit2D.collider.gameObject.GetComponent<NPC>());
 
->>>>>>> Stashed changes
                     break;
                 }
             }
