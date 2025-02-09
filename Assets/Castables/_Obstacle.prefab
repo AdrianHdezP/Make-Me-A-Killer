@@ -213,7 +213,7 @@ MonoBehaviour:
   collider_: {fileID: 4887992573852811216}
   placed: 0
   canBePlaced: 1
-  castingColor: {r: 0.0026699959, g: 0.50167185, b: 0.5660378, a: 0.41960785}
+  castingColor: {r: 0, g: 0.8881118, b: 1, a: 0.41960785}
   blockedColor: {r: 0.6132076, g: 0, b: 0, a: 0.7019608}
-  placedColor: {r: 0, g: 0, b: 0, a: 1}
+  placedColor: {r: 1, g: 1, b: 1, a: 1}
   osbtucle_: {fileID: -7739079571181326547}

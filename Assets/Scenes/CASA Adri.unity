@@ -11724,7 +11724,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -440}
+  m_AnchoredPosition: {x: -824, y: -403}
   m_SizeDelta: {x: 163.34, y: 163.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &824031433
@@ -20098,7 +20098,7 @@ Transform:
   m_GameObject: {fileID: 1143760166}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -921, z: 0}
+  m_LocalPosition: {x: 0, y: -1251, z: 0}
   m_LocalScale: {x: 108, y: 108, z: 108}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20126,6 +20126,7 @@ MonoBehaviour:
   verticalOffset: 6
   sideSpace: 3
   selectedExtraSpace: 1.75
+  selectedVertical: 2
   selectedDisk: {fileID: 0}
   selectedRot: {x: 0, y: 0, z: 0}
   positionCurve:
@@ -26618,7 +26619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7570925895981862751, guid: 442c0be7cba6f42468c4cdc48113a3b7, type: 3}
       propertyPath: layerMask.m_Bits
-      value: 4294967295
+      value: 503
       objectReference: {fileID: 0}
     - target: {fileID: 8936460978252668886, guid: 442c0be7cba6f42468c4cdc48113a3b7, type: 3}
       propertyPath: m_LocalPosition.z

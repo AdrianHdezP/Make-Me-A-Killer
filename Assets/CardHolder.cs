@@ -10,6 +10,7 @@ public class CardHolder : MonoBehaviour
 
     [SerializeField] float sideSpace;
     [SerializeField] float selectedExtraSpace;
+    [SerializeField] float selectedVertical;
 
     [SerializeField] public TransformLerper selectedDisk;
 
@@ -66,6 +67,8 @@ public class CardHolder : MonoBehaviour
             {
                 list[i].targetPosition = displayTransform.position + displayTransform.right * currentExtend + displayTransform.up * verticalOffset + displayTransform.up * positionCurve.Evaluate((float) i / (list.Count - 1));
                 currentExtend += sideSpace / (list.Count - 1) * 2 + selectedExtraSpace * 0.5f;
+
+                if (list[i] == selectedDisk) list[i].targetPosition += displayTransform.up * selectedVertical;
             }
 
             if (list[i] != selectedDisk)
