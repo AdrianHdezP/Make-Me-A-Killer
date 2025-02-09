@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -51,42 +50,47 @@ public class NPCView : MonoBehaviour
             }
 
             // Si yo soy el rojo y estoy viendo al azul muerto
-            if (npc.type == NPCType.red && seenNPC[i].type == NPCType.blue && seenNPC[i].dead)
+            if (npc.type == NPCType.red && seenNPC[i].type == NPCType.blue && seenNPC[i].dead && !npc.examinate)
             {
-                npc.bodyTarget = seenNPC[i].transform.position;
+                npc.bodyTarget = seenNPC[i].transform;
                 npc.examinate = true;
                 npc.InyectedState(npc.examinateBodyState);
             }
 
-            // Si yo soy normal y estoy viendo al azul muerto y aun no lo estoy examinando
-            if (npc.type == NPCType.normal && seenNPC[i].dead && !npc.examinate)
+            // Si yo soy normal o el rojo y estoy viendo al azul muerto y aun no lo estoy examinando ni estoy alerta
+            if (seenNPC[i].dead && !npc.examinate && !npc.alert)
             {
-                npc.bodyTarget = seenNPC[i].transform.position;
+                npc.bodyTarget = seenNPC[i].transform;
                 npc.examinate = true;
                 npc.InyectedState(npc.examinateBodyState);
             }
 
-            // Si yo soy normal y estoy viendo al azul muerto y si lo estoy examinando
-            if (npc.type == NPCType.normal && seenNPC[i].dead && npc.examinate)
+            // Si yo soy normal y estoy viendo al azul muerto, lo estoy examinando, lo estoy determinando y no estoy alerta
+            if (seenNPC[i].dead && npc.examinate && npc.determine && !npc.alert)
             {
-                Debug.Log("Corre");
+                if (seenNPC[i].type == NPCType.blue && npc.type == NPCType.red)
+                    npc.bloqMovement = true;
+
+                npc.alert = true;
+                npc.InyectedState(npc.alertState);
+                npc.determine = false;
 
                 if (blueVisibleAndDead && redVisible && !someoneElse)
                 {
-                    Debug.Log("Ganas");
+                    npc.win = true;
                 }
                 else
                 {
-                    Debug.Log("Pierdes");
+                    npc.loose = true;
                 }
             }
         }
     }
 
     private void LateUpdate()
-    {   
+    {
         if (npc.dead)
-            return;
+            Destroy(mesh);
 
         seenNPC.Clear();
         int rayCount = 50;
@@ -129,8 +133,6 @@ public class NPCView : MonoBehaviour
                         break;
                     }                   
                 }
-
-
             }
 
             if (collisionHit.collider == null)
@@ -161,9 +163,12 @@ public class NPCView : MonoBehaviour
         triangles[1] = 1;
         triangles[2] = 2;
 
-        mesh.vertices = vertices;
-        mesh.uv = uv;
-        mesh.triangles = triangles;
+        if (!npc.dead)
+        {
+            mesh.vertices = vertices;
+            mesh.uv = uv;
+            mesh.triangles = triangles;
+        }     
     }
 
     private Vector3 GetVectorFromAngle(float angle)

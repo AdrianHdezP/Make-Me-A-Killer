@@ -9,11 +9,15 @@ public class TalkState : NPCState
     public override void Enter()
     {
         base.Enter();
+
+        NPC.talkEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
+
+        NPC.talkEmote.SetActive(false);
     }
 
     public override void Update()

@@ -9,11 +9,15 @@ public class PhoneState : NPCState
     public override void Enter()
     {
         base.Enter();
+
+        NPC.phoneEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
+
+        NPC.phoneEmote.SetActive(false);
     }
 
     public override void Update()

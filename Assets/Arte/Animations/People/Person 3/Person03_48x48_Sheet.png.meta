@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 4ff2c7f9a32a1cb428e751696810c5e2
+guid: 6cf63469cd45f8c4090ced62864ecc83
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2368447477916376832
-    second: Red_48x48_Sheet_0
+      213: 931261881042998726
+    second: Person03_48x48_Sheet_0
   - first:
-      213: 1652157888203784745
-    second: Red_48x48_Sheet_1
+      213: 6771279197857448330
+    second: Person03_48x48_Sheet_1
   - first:
-      213: -3891293742697745197
-    second: Red_48x48_Sheet_2
+      213: 2241514029362156677
+    second: Person03_48x48_Sheet_2
   - first:
-      213: -3554891687657496243
-    second: Red_48x48_Sheet_3
+      213: 2035843086270899569
+    second: Person03_48x48_Sheet_3
   - first:
-      213: 1516943143662361489
-    second: Red_48x48_Sheet_4
+      213: 6552242695180782919
+    second: Person03_48x48_Sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,7 +125,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Red_48x48_Sheet_0
+      name: Person03_48x48_Sheet_0
       rect:
         serializedVersion: 2
         x: 7
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00f106ebe6a6ed020800000000000000
-      internalID: 2368447477916376832
+      spriteID: 6c51e6c2fb18cec00800000000000000
+      internalID: 931261881042998726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_48x48_Sheet_1
+      name: Person03_48x48_Sheet_1
       rect:
         serializedVersion: 2
         x: 55
@@ -162,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9220f3788d4ade610800000000000000
-      internalID: 1652157888203784745
+      spriteID: a81094ffd8a68fd50800000000000000
+      internalID: 6771279197857448330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_48x48_Sheet_2
+      name: Person03_48x48_Sheet_2
       rect:
         serializedVersion: 2
         x: 103
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d4fccd35f85ff9c0800000000000000
-      internalID: -3891293742697745197
+      spriteID: 5849f2732257b1f10800000000000000
+      internalID: 2241514029362156677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_48x48_Sheet_3
+      name: Person03_48x48_Sheet_3
       rect:
         serializedVersion: 2
         x: 147
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d41af2e38dc7aaec0800000000000000
-      internalID: -3554891687657496243
+      spriteID: 175ac972084c04c10800000000000000
+      internalID: 2035843086270899569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_48x48_Sheet_4
+      name: Person03_48x48_Sheet_4
       rect:
         serializedVersion: 2
         x: 194
@@ -228,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19b957680c34d0510800000000000000
-      internalID: 1516943143662361489
+      spriteID: 74d0668140e3eea50800000000000000
+      internalID: 6552242695180782919
       vertices: []
       indices: 
       edges: []
@@ -248,11 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Red_48x48_Sheet_0: 2368447477916376832
-      Red_48x48_Sheet_1: 1652157888203784745
-      Red_48x48_Sheet_2: -3891293742697745197
-      Red_48x48_Sheet_3: -3554891687657496243
-      Red_48x48_Sheet_4: 1516943143662361489
+      Person03_48x48_Sheet_0: 931261881042998726
+      Person03_48x48_Sheet_1: 6771279197857448330
+      Person03_48x48_Sheet_2: 2241514029362156677
+      Person03_48x48_Sheet_3: 2035843086270899569
+      Person03_48x48_Sheet_4: 6552242695180782919
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

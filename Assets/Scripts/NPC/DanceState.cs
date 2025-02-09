@@ -9,11 +9,15 @@ public class DanceState : NPCState
     public override void Enter()
     {
         base.Enter();
+
+        NPC.danceEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
+
+        NPC.danceEmote.SetActive(false);
     }
 
     public override void Update()

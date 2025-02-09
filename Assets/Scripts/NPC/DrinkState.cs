@@ -9,11 +9,15 @@ public class DrinkState : NPCState
     public override void Enter()
     {
         base.Enter();
+
+        NPC.drinkEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
+
+        NPC.drinkEmote.SetActive(false);
     }
 
     public override void Update()
