@@ -89,8 +89,10 @@ public class NPCView : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (npc.dead || npc.type == NPCType.red && npc.examinate || npc.alert)
+        if (npc.dead || npc.type == NPCType.red && npc.examinate || npc.alert || npc.hidden != 0)
             Destroy(mesh);
+        else if (mesh == null)
+            mesh = new Mesh();  
 
         seenNPC.Clear();
         int rayCount = 50;
