@@ -116,9 +116,11 @@ public class NPCView : MonoBehaviour
                 if (ray.collider.gameObject != NPCCollider)
                 {
                     myRaycastHit2D = ray;
-                    
-                    if (myRaycastHit2D.collider.gameObject.GetComponent<NPC>() && !seenNPC.Contains(myRaycastHit2D.collider.gameObject.GetComponent<NPC>()))
-                        seenNPC.Add(myRaycastHit2D.collider.gameObject.GetComponent<NPC>());
+
+                    NPC npc = myRaycastHit2D.collider.gameObject.GetComponent<NPC>();
+
+                    if (npc && !seenNPC.Contains(npc) && npc.hidden == 0 && this.npc.hidden == 0)
+                        seenNPC.Add(npc);
 
                     break;
                 }

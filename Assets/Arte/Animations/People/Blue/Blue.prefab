@@ -105,6 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078b38ede5935cd48898012096eb5a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rederer: {fileID: 918533651754554175}
+  deadSprite: {fileID: 8125277270040597035, guid: 060320f7f969d3045873a5dfcc638797, type: 3}
   type: 0
   talkStateProbability: 0
   talkStateTimeDuration: 1

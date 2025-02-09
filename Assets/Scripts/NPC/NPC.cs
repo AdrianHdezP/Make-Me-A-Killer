@@ -13,6 +13,9 @@ public class NPC : MonoBehaviour
 {
     #region Componets
 
+    [SerializeField] SpriteRenderer rederer;
+    [SerializeField] Sprite deadSprite;
+
     public Animator anim {  get; private set; }
     public NavMeshAgent agent { get; private set; }
 
@@ -83,6 +86,16 @@ public class NPC : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         stateMachine.Initialize(moveState);
+    }
+
+    private void OnEnable()
+    {
+        if (dead)
+        {
+            anim.enabled = false;
+            rederer.sprite = deadSprite;
+        }
+
     }
 
     private void Update()
