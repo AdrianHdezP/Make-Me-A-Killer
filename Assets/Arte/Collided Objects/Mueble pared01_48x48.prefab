@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8581079927014313178}
   - component: {fileID: 2530537961465279216}
   - component: {fileID: 2045572100691673398}
+  - component: {fileID: -908929173892554120}
   m_Layer: 0
   m_Name: Mueble pared01_48x48
   m_TagString: Untagged
@@ -109,3 +110,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.26, y: 0.48, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-908929173892554120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5925305201936265692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

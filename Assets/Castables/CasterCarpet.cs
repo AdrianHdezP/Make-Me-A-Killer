@@ -7,6 +7,7 @@ public class CasterCarpet : Caster
 {
     [SerializeField] Animator carpetAnim;
     [SerializeField] Card carpetCardPrefab;
+    [SerializeField] Sprite placedCarpet;
     List<NPC> npcs = new();
 
 
@@ -59,6 +60,8 @@ public class CasterCarpet : Caster
         {
             npc.gameObject.SetActive(false);
         }
+
+        if (npcs.Count > 0) renderer_.sprite = placedCarpet;
 
         StartCoroutine(TimeOutCollider());
     }

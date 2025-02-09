@@ -106,6 +106,7 @@ MonoBehaviour:
   placedColor: {r: 1, g: 1, b: 1, a: 1}
   carpetAnim: {fileID: 3379187261541983409}
   carpetCardPrefab: {fileID: 8250274633846078295, guid: 53876e0992aa0f54aa52bb418719dd86, type: 3}
+  placedCarpet: {fileID: 1526308496921901782, guid: 27d2b632a91bb0e4fbe182dd7d76d140, type: 3}
 --- !u!1 &4673247897487976308
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +240,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.707055, w: 0.7071586}
   m_LocalPosition: {x: -0.006, y: 0, z: 0}
-  m_LocalScale: {x: 0.4121, y: 0.4121, z: 0.4121}
+  m_LocalScale: {x: 2.85, y: 2.85, z: 2.85}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7315008754047010502}
@@ -288,7 +289,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1935985929446074354, guid: c1f391baf2d4ac948bae62e161da43fe, type: 3}
+  m_Sprite: {fileID: 5656432527434878755, guid: 9981ed90440d7c642906e0a90774d250, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
