@@ -109,30 +109,37 @@ public class NPCView : MonoBehaviour
             RaycastHit2D[] raycastHit2D = Physics2D.RaycastAll(transform.position, GetVectorFromAngle(angle), viewDistance, layerMask);
             //Debug.DrawRay(transform.position, GetVectorFromAngle(angle) * viewDistance);
 
-            RaycastHit2D myRaycastHit2D = new RaycastHit2D();
+            //RaycastHit2D myRaycastHit2D = new RaycastHit2D();
+
+            RaycastHit2D collisionHit =  new RaycastHit2D();
 
             foreach (var ray in raycastHit2D)
             {
                 if (ray.collider.gameObject != NPCCollider)
                 {
-                    myRaycastHit2D = ray;
-
-                    NPC npc = myRaycastHit2D.collider.gameObject.GetComponent<NPC>();
+                    NPC npc = ray.collider.gameObject.GetComponent<NPC>();
 
                     if (npc && !seenNPC.Contains(npc) && npc.hidden == 0 && this.npc.hidden == 0)
+                    {
                         seenNPC.Add(npc);
-
-                    break;
+                    }
+                    else if (!npc)
+                    {
+                        collisionHit = ray;
+                        break;
+                    }                   
                 }
+
+
             }
 
-            if (myRaycastHit2D.collider == null)
+            if (collisionHit.collider == null)
             {
                 vertex = transform.InverseTransformDirection(GetVectorFromAngle(angle) * viewDistance);
             }
             else
             {
-                vertex = transform.InverseTransformPoint(myRaycastHit2D.point);
+                vertex = transform.InverseTransformPoint(collisionHit.point);
             }
 
             vertices[vertexIndex] = vertex;
