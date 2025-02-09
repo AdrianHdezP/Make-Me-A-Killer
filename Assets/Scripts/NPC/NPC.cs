@@ -64,11 +64,11 @@ public class NPC : MonoBehaviour
 
         moveState = new MoveState(this, stateMachine, "Move");
 
-        talkState = new TalkState(this, stateMachine, "Talk", targets.talkTransform, talkStateProbability, talkStateTimeDuration);
-        phoneState = new PhoneState(this, stateMachine, "Phone", targets.phoneTransform, phoneStateProbability, phoneStateTimeDuration);
-        drinkState = new DrinkState(this, stateMachine, "Drink", targets.drinkTransform, drinkStateProbability, drinkStateTimeDuration);
+        talkState = new TalkState(this, stateMachine, "Idle", targets.talkTransform, talkStateProbability, talkStateTimeDuration);
+        phoneState = new PhoneState(this, stateMachine, "Idle", targets.phoneTransform, phoneStateProbability, phoneStateTimeDuration);
+        drinkState = new DrinkState(this, stateMachine, "Idle", targets.drinkTransform, drinkStateProbability, drinkStateTimeDuration);
 
-        examinateBodyState = new ExaminateBodyState(this, stateMachine, "Examinate");
+        examinateBodyState = new ExaminateBodyState(this, stateMachine, "Idle");
         deadState = new DeadState(this, stateMachine, "Dead");
 
         states = new List<NPCState>();
