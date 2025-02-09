@@ -44,12 +44,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fc1f45b1284272e479ca4b1a617e31c8, type: 3}
-  m_Resource: {fileID: 8300000, guid: fc1f45b1284272e479ca4b1a617e31c8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 384e6913b43628840be90df258c58f01, type: 3}
+  m_Resource: {fileID: 8300000, guid: 384e6913b43628840be90df258c58f01, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.328
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -152,8 +152,8 @@ MonoBehaviour:
   placedColor: {r: 1, g: 1, b: 1, a: 1}
   boomBox: {fileID: 4818257185147223331}
   audioSource: {fileID: 7637526777859897011}
-  musicThreshHold: 15
-  musicTimer: 25
+  musicThreshHold: 7.5
+  musicTimer: 10
 --- !u!1 &6515998119556144261
 GameObject:
   m_ObjectHideFlags: 0

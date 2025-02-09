@@ -13999,10 +13999,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Person 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8271327042310684930, guid: f8306eff514670e49a365df7735614db, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 8803716835523555757, guid: f8306eff514670e49a365df7735614db, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.195
@@ -14107,7 +14103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 7995790404143884116, guid: b73365c75bf301a468c7e543ac6ef3a9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25983,14 +25979,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -8160614530452982367, guid: c63dc2213dfeeb743b9407a715d8570d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -26158,7 +26154,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 70
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -28838,7 +28834,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 2606246518559297354, guid: 5653726a211631f41a04b7e126652227, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -32250,17 +32246,9 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 159232812}
-    - target: {fileID: 6796368656491185620, guid: 8dd422b3d547d4a4da5481263122b431, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7080645074114700877, guid: 8dd422b3d547d4a4da5481263122b431, type: 3}
       propertyPath: m_Name
       value: Person 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7080645074114700877, guid: 8dd422b3d547d4a4da5481263122b431, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32279,18 +32267,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Person 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3814821565849745829, guid: d996e2783f5c998439ed1d0c053ed08b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5359071337229733565, guid: d996e2783f5c998439ed1d0c053ed08b, type: 3}
       propertyPath: door
       value: 
       objectReference: {fileID: 159232812}
-    - target: {fileID: 5499779830181562636, guid: d996e2783f5c998439ed1d0c053ed08b, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6131196785283310721, guid: d996e2783f5c998439ed1d0c053ed08b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.128
@@ -32452,10 +32432,6 @@ PrefabInstance:
     - target: {fileID: 7033238027176295268, guid: 286d9c37b93a82d4a909ffd0194556b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401524454451911914, guid: 286d9c37b93a82d4a909ffd0194556b4, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
