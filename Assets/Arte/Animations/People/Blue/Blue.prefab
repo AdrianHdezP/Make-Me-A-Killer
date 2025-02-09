@@ -281,32 +281,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  talkStateProbability: 0
-  talkStateTimeDuration: 1
+  talkStateProbability: 20
+  talkStateTimeDuration: 10
   talkEmote: {fileID: 4468036612536985066}
-  phoneStateProbability: 0
-  phoneStateTimeDuration: 1
+  phoneStateProbability: 80
+  phoneStateTimeDuration: 20
   phoneEmote: {fileID: 8611419399702971556}
-  eatStateProbability: 0
-  eatStateTimeDuration: 1
+  eatStateProbability: 60
+  eatStateTimeDuration: 5
   eatEmote: {fileID: 2979209264074032065}
-  drinkStateProbability: 0
-  drinkStateTimeDuration: 1
+  drinkStateProbability: 40
+  drinkStateTimeDuration: 2.5
   drinkEmote: {fileID: 5594056827133089346}
-  smokeStateProbability: 0
-  smokeStateTimeDuration: 1
+  smokeStateProbability: 20
+  smokeStateTimeDuration: 15
   smokeEmote: {fileID: 1088625348516143182}
-  danceStateProbability: 0
-  danceStateTimeDuration: 1
+  danceStateProbability: 20
+  danceStateTimeDuration: 20
   danceEmote: {fileID: 6537834589902556771}
-  musicStateProbability: 0
-  musicStateTimeDuration: 1
+  musicStateProbability: 40
+  musicStateTimeDuration: 20
   musicEmote: {fileID: 3152583988737344324}
-  tvStateProbability: 0
-  tvStateTimeDuration: 1
+  tvStateProbability: 80
+  tvStateTimeDuration: 5
   tvEmote: {fileID: 2055079608263197882}
-  peeStateProbability: 0
-  peeStateTimeDuration: 1
+  peeStateProbability: 20
+  peeStateTimeDuration: 15
   peeEmote: {fileID: 4904509443944199973}
   examinateEmote: {fileID: 377509434824944986}
   alertEmote: {fileID: 2129417283517305217}
@@ -1137,7 +1137,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 10
   m_Sprite: {fileID: 8125277270040597035, guid: 060320f7f969d3045873a5dfcc638797, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
