@@ -9,8 +9,6 @@ public class TalkState : NPCState
     public override void Enter()
     {
         base.Enter();
-
-        stateTimer = NPC.talkStateTimeDuration;
     }
 
     public override void Exit()

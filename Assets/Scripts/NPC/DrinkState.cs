@@ -9,8 +9,6 @@ public class DrinkState : NPCState
     public override void Enter()
     {
         base.Enter();
-
-        stateTimer = NPC.drinkStateTimeDuration;
     }
 
     public override void Exit()

@@ -33,6 +33,7 @@ public class NPC : MonoBehaviour
     public PhoneState phoneState { get; private set; }
     public TalkState talkState { get; private set; }
     public DrinkState drinkState { get; private set; }
+    public DanceState danceState { get; private set; }
 
     public ExaminateBodyState examinateBodyState { get; private set; }
     public DeadState deadState { get; private set; }
@@ -48,6 +49,8 @@ public class NPC : MonoBehaviour
     public float phoneStateTimeDuration;
     public int drinkStateProbability;
     public float drinkStateTimeDuration;
+    public int danceStateProbability;
+    public float danceStateTimeDuration;
 
     [HideInInspector] public NPCState nextState;
     [HideInInspector] public Targets targets;
@@ -70,6 +73,7 @@ public class NPC : MonoBehaviour
         talkState = new TalkState(this, stateMachine, "Idle", targets.talkTransform, talkStateProbability, talkStateTimeDuration);
         phoneState = new PhoneState(this, stateMachine, "Idle", targets.phoneTransform, phoneStateProbability, phoneStateTimeDuration);
         drinkState = new DrinkState(this, stateMachine, "Idle", targets.drinkTransform, drinkStateProbability, drinkStateTimeDuration);
+        danceState = new DanceState(this, stateMachine, "Idle", targets.drinkTransform, danceStateProbability, danceStateTimeDuration); //AÑADIDO DANCE STATE :)
 
         examinateBodyState = new ExaminateBodyState(this, stateMachine, "Idle");
         deadState = new DeadState(this, stateMachine, "Dead");
@@ -78,6 +82,7 @@ public class NPC : MonoBehaviour
         states.Add(talkState);
         states.Add(phoneState);
         states.Add(drinkState);
+        states.Add(danceState);
 
         #endregion
 

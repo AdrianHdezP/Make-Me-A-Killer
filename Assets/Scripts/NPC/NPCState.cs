@@ -31,6 +31,7 @@ public class NPCState
     public virtual void Enter()
     {
         NPC.anim.SetBool(animBoolName, true);
+        stateTimer = stateTimeDuration; //SET LA DURACION AQUI PARA PODER DARSELA COMO VALOR AL CREAR EL STATE!!!
     }
 
     public virtual void Update()
