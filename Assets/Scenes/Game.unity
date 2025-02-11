@@ -130,7 +130,8 @@ GameObject:
   - component: {fileID: 486537}
   - component: {fileID: 486539}
   - component: {fileID: 486538}
-  m_Layer: 0
+  - component: {fileID: 486540}
+  m_Layer: 9
   m_Name: Walkable (17)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -223,6 +224,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &486540
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486536}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &16408256
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 16408258}
   - component: {fileID: 16408257}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,6 +368,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -448,6 +499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armario_0 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7392110578910203035, guid: 1c4b43d594530344fbf87b53f081009c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -468,7 +523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 25953041}
   - component: {fileID: 25953040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taza_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,6 +678,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maceta01_48x48_0 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -695,7 +754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 54706015}
   - component: {fileID: 54706014}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -782,7 +841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 60339401}
   - component: {fileID: 60339400}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tenedor_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -869,7 +928,7 @@ GameObject:
   m_Component:
   - component: {fileID: 70874833}
   - component: {fileID: 70874832}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plato_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -956,7 +1015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 76804004}
   - component: {fileID: 76804003}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arbusto_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1106,7 +1165,8 @@ GameObject:
   - component: {fileID: 86814504}
   - component: {fileID: 86814506}
   - component: {fileID: 86814505}
-  m_Layer: 0
+  - component: {fileID: 86814507}
+  m_Layer: 6
   m_Name: Not Walkeable (8)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -1199,6 +1259,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &86814507
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86814503}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &90194573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,6 +1400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armario_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7392110578910203035, guid: 1c4b43d594530344fbf87b53f081009c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1316,7 +1426,7 @@ GameObject:
   - component: {fileID: 94353106}
   - component: {fileID: 94353105}
   - component: {fileID: 94353104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_48x48_sheet_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1465,7 +1575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 121859374}
   - component: {fileID: 121859373}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1636,7 +1746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 138206863}
   - component: {fileID: 138206862}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arbusto_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1725,7 +1835,7 @@ GameObject:
   - component: {fileID: 140940328}
   - component: {fileID: 140940327}
   - component: {fileID: 140940330}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: vater_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1880,6 +1990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maceta01_48x48_0 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1984,7 +2098,8 @@ GameObject:
   - component: {fileID: 163681456}
   - component: {fileID: 163681458}
   - component: {fileID: 163681457}
-  m_Layer: 0
+  - component: {fileID: 163681459}
+  m_Layer: 6
   m_Name: Not Walkeable
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -2077,6 +2192,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &163681459
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163681455}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &170546308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,7 +2248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 170546309}
   - component: {fileID: 170546310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arbusto_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2175,7 +2336,8 @@ GameObject:
   - component: {fileID: 171660870}
   - component: {fileID: 171660872}
   - component: {fileID: 171660871}
-  m_Layer: 0
+  - component: {fileID: 171660873}
+  m_Layer: 9
   m_Name: Walkable (5)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -2268,6 +2430,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &171660873
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171660869}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &176007211
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,7 +2548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 220333377}
   - component: {fileID: 220333376}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2512,6 +2720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piano_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7898622929546715294, guid: 3ff8796c9e08d1040afed8219d6818af, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2568,6 +2780,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -2641,7 +2857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 265578926}
   - component: {fileID: 265578925}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2730,6 +2946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mueble01_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1405127619326693815, guid: 178b198e6cf0d21469072fe98b3f7468, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5833722363623514613, guid: 178b198e6cf0d21469072fe98b3f7468, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3649092
@@ -2803,6 +3023,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -2878,7 +3102,7 @@ GameObject:
   - component: {fileID: 292240026}
   - component: {fileID: 292240025}
   - component: {fileID: 292240024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "MuebleBa\xF1o_0 (1)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3027,7 +3251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 307361390}
   - component: {fileID: 307361389}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Alfombra03_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3145,7 +3369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 308754859}
   - component: {fileID: 308754858}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tenedor_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3232,7 +3456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 313976332}
   - component: {fileID: 313976331}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3319,7 +3543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 314740024}
   - component: {fileID: 314740023}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3481,7 +3705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 320216797}
   - component: {fileID: 320216796}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tenedor_0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3629,9 +3853,9 @@ CompositeCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
+  m_GeometryType: 1
   m_GenerationType: 0
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.03
   m_ColliderPaths:
   - m_Collider: {fileID: 329366282}
     m_ColliderPaths:
@@ -3655,34 +3879,14 @@ CompositeCollider2D:
         Y: 75851408
       - X: -58493164
         Y: 75851408
-    - - X: -213522192
-        Y: 94655456
-      - X: -213522192
-        Y: 110116576
-      - X: -210806048
-        Y: 112832720
-      - X: -194718128
-        Y: 112832720
-      - X: -193464528
-        Y: 114713128
-      - X: -193464528
+    - - X: 49943584
         Y: 120145416
-      - X: -198061088
+      - X: -50344736
         Y: 120145416
-      - X: -200777232
-        Y: 117429272
-      - X: -216865136
-        Y: 117429272
-      - X: -218118736
-        Y: 115548872
-      - X: -218118736
-        Y: 100087744
-      - X: -220834880
-        Y: 97371608
-      - X: -220834880
-        Y: 92775048
-      - X: -214775792
-        Y: 92775048
+      - X: -50344736
+        Y: 115966728
+      - X: 49943584
+        Y: 115966728
     - - X: 130174256
         Y: 99043072
       - X: 129338512
@@ -3723,14 +3927,34 @@ CompositeCollider2D:
         Y: 59972424
       - X: 130174256
         Y: 59972424
-    - - X: 49943584
+    - - X: -213522192
+        Y: 94655456
+      - X: -213522192
+        Y: 110116576
+      - X: -210806048
+        Y: 112832720
+      - X: -194718128
+        Y: 112832720
+      - X: -193464528
+        Y: 114713128
+      - X: -193464528
         Y: 120145416
-      - X: -50344736
+      - X: -198061088
         Y: 120145416
-      - X: -50344736
-        Y: 115966728
-      - X: 49943584
-        Y: 115966728
+      - X: -200777232
+        Y: 117429272
+      - X: -216865136
+        Y: 117429272
+      - X: -218118736
+        Y: 115548872
+      - X: -218118736
+        Y: 100087744
+      - X: -220834880
+        Y: 97371608
+      - X: -220834880
+        Y: 92775048
+      - X: -214775792
+        Y: 92775048
     - - X: -160661888
         Y: 97371608
       - X: -163378032
@@ -3767,62 +3991,6 @@ CompositeCollider2D:
         Y: 115966728
       - X: 59972420
         Y: 115966728
-    - - X: -136425552
-        Y: 100087744
-      - X: -132664744
-        Y: 100087744
-      - X: -130575400
-        Y: 105520040
-      - X: -130575400
-        Y: 105937904
-      - X: -100488904
-        Y: 105937904
-      - X: -100488904
-        Y: 102177096
-      - X: -95056608
-        Y: 100087744
-      - X: -94638752
-        Y: 100087744
-      - X: -94638752
-        Y: 88178512
-      - X: -94220880
-        Y: 87342776
-      - X: -92549408
-        Y: 85880232
-      - X: -80431240
-        Y: 85880232
-      - X: -80431240
-        Y: 82119424
-      - X: -74998952
-        Y: 80030080
-      - X: -74581088
-        Y: 80030080
-      - X: -74581088
-        Y: 78149680
-      - X: -74163216
-        Y: 77313944
-      - X: -72491744
-        Y: 75851408
-      - X: -70402408
-        Y: 75851408
-      - X: -70402408
-        Y: 89014248
-      - X: -71238144
-        Y: 90058920
-      - X: -90460064
-        Y: 90058920
-      - X: -90460064
-        Y: 109071912
-      - X: -91295808
-        Y: 110116584
-      - X: -139559568
-        Y: 110116584
-      - X: -140604240
-        Y: 109280840
-      - X: -140604240
-        Y: 59972424
-      - X: -136425552
-        Y: 59972424
     - - X: 29259122
         Y: 90685712
       - X: 29885924
@@ -3907,6 +4075,62 @@ CompositeCollider2D:
         Y: 90058912
       - X: -2498850
         Y: 90058912
+    - - X: -136425552
+        Y: 100087744
+      - X: -132664744
+        Y: 100087744
+      - X: -130575400
+        Y: 105520040
+      - X: -130575400
+        Y: 105937904
+      - X: -100488904
+        Y: 105937904
+      - X: -100488904
+        Y: 102177096
+      - X: -95056608
+        Y: 100087744
+      - X: -94638752
+        Y: 100087744
+      - X: -94638752
+        Y: 88178512
+      - X: -94220880
+        Y: 87342776
+      - X: -92549408
+        Y: 85880232
+      - X: -80431240
+        Y: 85880232
+      - X: -80431240
+        Y: 82119424
+      - X: -74998952
+        Y: 80030080
+      - X: -74581088
+        Y: 80030080
+      - X: -74581088
+        Y: 78149680
+      - X: -74163216
+        Y: 77313944
+      - X: -72491744
+        Y: 75851408
+      - X: -70402408
+        Y: 75851408
+      - X: -70402408
+        Y: 89014248
+      - X: -71238144
+        Y: 90058920
+      - X: -90460064
+        Y: 90058920
+      - X: -90460064
+        Y: 109071912
+      - X: -91295808
+        Y: 110116584
+      - X: -139559568
+        Y: 110116584
+      - X: -140604240
+        Y: 109280840
+      - X: -140604240
+        Y: 59972424
+      - X: -136425552
+        Y: 59972424
     - - X: -170690720
         Y: 90058920
       - X: -171108576
@@ -3965,14 +4189,6 @@ CompositeCollider2D:
         Y: 59972424
       - X: -213522192
         Y: 59972424
-    - - X: -60373572
-        Y: 80030088
-      - X: -70402400
-        Y: 80030088
-      - X: -70402400
-        Y: 75851408
-      - X: -60373572
-        Y: 75851408
     - - X: -10856210
         Y: 60599228
       - X: -10229409
@@ -4091,6 +4307,14 @@ CompositeCollider2D:
         Y: 59972424
       - X: -30913878
         Y: 59972424
+    - - X: -60373572
+        Y: 80030088
+      - X: -70402400
+        Y: 80030088
+      - X: -70402400
+        Y: 75851408
+      - X: -60373572
+        Y: 75851408
     - - X: 80030088
         Y: 70001256
       - X: 100087744
@@ -4131,13 +4355,17 @@ CompositeCollider2D:
         Y: 62688564
       - X: -90877936
         Y: 62688564
-    - - X: -60373572
+    - - X: -56194892
+        Y: 61852828
+      - X: -56612760
+        Y: 62688564
+      - X: -58284232
         Y: 64151100
-      - X: -70402400
+      - X: -60373568
         Y: 64151100
-      - X: -70402400
+      - X: -60373568
         Y: 59972424
-      - X: -60373572
+      - X: -56194892
         Y: 59972424
     - - X: -70402408
         Y: 64151100
@@ -4151,41 +4379,29 @@ CompositeCollider2D:
         Y: 59972424
       - X: -70402408
         Y: 59972424
-    - - X: -56194892
-        Y: 61852828
-      - X: -56612760
-        Y: 62688564
-      - X: -58284232
+    - - X: -60373572
         Y: 64151100
-      - X: -60373568
+      - X: -70402400
         Y: 64151100
-      - X: -60373568
+      - X: -70402400
         Y: 59972424
-      - X: -56194892
+      - X: -60373572
         Y: 59972424
-    - - X: 80030088
+    - - X: -160661888
+        Y: 58927752
+      - X: -161497632
         Y: 59972420
-      - X: 75851408
-        Y: 59972420
-      - X: 75851408
-        Y: 49943592
-      - X: 80030088
-        Y: 49943592
-    - - X: -210806048
-        Y: 55375872
-      - X: -210806048
-        Y: 55793744
       - X: -170690720
-        Y: 55793744
+        Y: 59972420
       - X: -170690720
         Y: 52032928
       - X: -165258448
         Y: 49943592
       - X: -160661888
         Y: 49943592
-      - X: -160661888
-        Y: 58927752
-      - X: -161497632
+    - - X: -210806048
+        Y: 55375872
+      - X: -210806048
         Y: 59972420
       - X: -219790208
         Y: 59972420
@@ -4194,6 +4410,34 @@ CompositeCollider2D:
       - X: -220834880
         Y: 49943592
       - X: -212895392
+        Y: 49943592
+    - - X: 104266432
+        Y: 59972420
+      - X: 100087744
+        Y: 59972420
+      - X: 100087744
+        Y: 49943592
+      - X: 104266432
+        Y: 49943592
+    - - X: -116367880
+        Y: 51823992
+      - X: -116785752
+        Y: 52659732
+      - X: -118457224
+        Y: 54122268
+      - X: -130575400
+        Y: 54122268
+      - X: -130575400
+        Y: 57883080
+      - X: -136007696
+        Y: 59972420
+      - X: -140604240
+        Y: 59972420
+      - X: -140604240
+        Y: 50988260
+      - X: -139768496
+        Y: 49943592
+      - X: -116367880
         Y: 49943592
     - - X: -70402408
         Y: 50779324
@@ -4223,33 +4467,13 @@ CompositeCollider2D:
         Y: 49943592
       - X: -56194892
         Y: 49943592
-    - - X: -116367880
-        Y: 51823992
-      - X: -116785752
-        Y: 52659732
-      - X: -118457224
-        Y: 54122268
-      - X: -130575400
-        Y: 54122268
-      - X: -130575400
-        Y: 57883080
-      - X: -136007696
+    - - X: 80030088
         Y: 59972420
-      - X: -140604240
+      - X: 75851408
         Y: 59972420
-      - X: -140604240
-        Y: 50988260
-      - X: -139768496
+      - X: 75851408
         Y: 49943592
-      - X: -116367880
-        Y: 49943592
-    - - X: 104266432
-        Y: 59972420
-      - X: 100087744
-        Y: 59972420
-      - X: 100087744
-        Y: 49943592
-      - X: 104266432
+      - X: 80030088
         Y: 49943592
     - - X: 130174256
         Y: 59972420
@@ -5347,20 +5571,10 @@ CompositeCollider2D:
       - {x: -6.037357, y: 11.930967}
       - {x: -6.037357, y: 7.5851407}
       - {x: -5.8493166, y: 7.5851407}
-    - - {x: -21.352219, y: 9.465546}
-      - {x: -21.352219, y: 11.011658}
-      - {x: -21.080605, y: 11.283272}
-      - {x: -19.471813, y: 11.283272}
-      - {x: -19.346453, y: 11.4713125}
-      - {x: -19.346453, y: 12.014542}
-      - {x: -19.806108, y: 12.014542}
-      - {x: -20.077723, y: 11.742928}
-      - {x: -21.686514, y: 11.742928}
-      - {x: -21.811874, y: 11.554888}
-      - {x: -21.811874, y: 10.008775}
-      - {x: -22.083488, y: 9.737161}
-      - {x: -22.083488, y: 9.277505}
-      - {x: -21.47758, y: 9.277505}
+    - - {x: 4.9943585, y: 12.014542}
+      - {x: -5.034474, y: 12.014542}
+      - {x: -5.034474, y: 11.596673}
+      - {x: 4.9943585, y: 11.596673}
     - - {x: 13.017426, y: 9.904307}
       - {x: 12.933851, y: 10.008775}
       - {x: 8.003009, y: 10.008775}
@@ -5381,10 +5595,20 @@ CompositeCollider2D:
       - {x: 12.599557, y: 9.005891}
       - {x: 12.599557, y: 5.9972425}
       - {x: 13.017426, y: 5.9972425}
-    - - {x: 4.9943585, y: 12.014542}
-      - {x: -5.034474, y: 12.014542}
-      - {x: -5.034474, y: 11.596673}
-      - {x: 4.9943585, y: 11.596673}
+    - - {x: -21.352219, y: 9.465546}
+      - {x: -21.352219, y: 11.011658}
+      - {x: -21.080605, y: 11.283272}
+      - {x: -19.471813, y: 11.283272}
+      - {x: -19.346453, y: 11.4713125}
+      - {x: -19.346453, y: 12.014542}
+      - {x: -19.806108, y: 12.014542}
+      - {x: -20.077723, y: 11.742928}
+      - {x: -21.686514, y: 11.742928}
+      - {x: -21.811874, y: 11.554888}
+      - {x: -21.811874, y: 10.008775}
+      - {x: -22.083488, y: 9.737161}
+      - {x: -22.083488, y: 9.277505}
+      - {x: -21.47758, y: 9.277505}
     - - {x: -16.066189, y: 9.737161}
       - {x: -16.337803, y: 10.008775}
       - {x: -16.337803, y: 11.617567}
@@ -5403,34 +5627,6 @@ CompositeCollider2D:
       - {x: 4.9943595, y: 12.014542}
       - {x: 4.9943595, y: 11.596673}
       - {x: 5.997242, y: 11.596673}
-    - - {x: -13.642555, y: 10.008775}
-      - {x: -13.266475, y: 10.008775}
-      - {x: -13.05754, y: 10.552004}
-      - {x: -13.05754, y: 10.59379}
-      - {x: -10.04889, y: 10.59379}
-      - {x: -10.04889, y: 10.21771}
-      - {x: -9.505661, y: 10.008775}
-      - {x: -9.463876, y: 10.008775}
-      - {x: -9.463876, y: 8.817851}
-      - {x: -9.422088, y: 8.734278}
-      - {x: -9.254941, y: 8.588023}
-      - {x: -8.043124, y: 8.588023}
-      - {x: -8.043124, y: 8.211943}
-      - {x: -7.499895, y: 8.003008}
-      - {x: -7.458109, y: 8.003008}
-      - {x: -7.458109, y: 7.814968}
-      - {x: -7.4163218, y: 7.7313943}
-      - {x: -7.2491746, y: 7.5851407}
-      - {x: -7.040241, y: 7.5851407}
-      - {x: -7.040241, y: 8.901425}
-      - {x: -7.1238146, y: 9.005892}
-      - {x: -9.046006, y: 9.005892}
-      - {x: -9.046006, y: 10.907191}
-      - {x: -9.1295805, y: 11.011659}
-      - {x: -13.955957, y: 11.011659}
-      - {x: -14.060424, y: 10.928084}
-      - {x: -14.060424, y: 5.9972425}
-      - {x: -13.642555, y: 5.9972425}
     - - {x: 2.9259121, y: 9.068571}
       - {x: 2.9885924, y: 9.319292}
       - {x: 2.9885924, y: 9.9252}
@@ -5473,6 +5669,34 @@ CompositeCollider2D:
       - {x: -1.0020475, y: 9.089465}
       - {x: -0.8975805, y: 9.005891}
       - {x: -0.24988501, y: 9.005891}
+    - - {x: -13.642555, y: 10.008775}
+      - {x: -13.266475, y: 10.008775}
+      - {x: -13.05754, y: 10.552004}
+      - {x: -13.05754, y: 10.59379}
+      - {x: -10.04889, y: 10.59379}
+      - {x: -10.04889, y: 10.21771}
+      - {x: -9.505661, y: 10.008775}
+      - {x: -9.463876, y: 10.008775}
+      - {x: -9.463876, y: 8.817851}
+      - {x: -9.422088, y: 8.734278}
+      - {x: -9.254941, y: 8.588023}
+      - {x: -8.043124, y: 8.588023}
+      - {x: -8.043124, y: 8.211943}
+      - {x: -7.499895, y: 8.003008}
+      - {x: -7.458109, y: 8.003008}
+      - {x: -7.458109, y: 7.814968}
+      - {x: -7.4163218, y: 7.7313943}
+      - {x: -7.2491746, y: 7.5851407}
+      - {x: -7.040241, y: 7.5851407}
+      - {x: -7.040241, y: 8.901425}
+      - {x: -7.1238146, y: 9.005892}
+      - {x: -9.046006, y: 9.005892}
+      - {x: -9.046006, y: 10.907191}
+      - {x: -9.1295805, y: 11.011659}
+      - {x: -13.955957, y: 11.011659}
+      - {x: -14.060424, y: 10.928084}
+      - {x: -14.060424, y: 5.9972425}
+      - {x: -13.642555, y: 5.9972425}
     - - {x: -17.069073, y: 9.005892}
       - {x: -17.110857, y: 9.005892}
       - {x: -17.069073, y: 9.026785}
@@ -5502,10 +5726,6 @@ CompositeCollider2D:
       - {x: -21.811874, y: 8.003008}
       - {x: -21.811874, y: 5.9972425}
       - {x: -21.352219, y: 5.9972425}
-    - - {x: -6.0373573, y: 8.003009}
-      - {x: -7.0402403, y: 8.003009}
-      - {x: -7.0402403, y: 7.5851407}
-      - {x: -6.0373573, y: 7.5851407}
     - - {x: -1.085621, y: 6.0599227}
       - {x: -1.0229409, y: 6.310643}
       - {x: -1.0229409, y: 6.916552}
@@ -5565,6 +5785,10 @@ CompositeCollider2D:
       - {x: -4.031591, y: 6.0181355}
       - {x: -3.968911, y: 5.9972425}
       - {x: -3.0913877, y: 5.9972425}
+    - - {x: -6.0373573, y: 8.003009}
+      - {x: -7.0402403, y: 8.003009}
+      - {x: -7.0402403, y: 7.5851407}
+      - {x: -6.0373573, y: 7.5851407}
     - - {x: 8.003009, y: 7.000126}
       - {x: 10.008775, y: 7.000126}
       - {x: 10.008775, y: 5.9972425}
@@ -5585,38 +5809,48 @@ CompositeCollider2D:
       - {x: -12.054657, y: 6.310643}
       - {x: -12.01287, y: 6.2688565}
       - {x: -9.087793, y: 6.2688565}
-    - - {x: -6.0373573, y: 6.41511}
-      - {x: -7.0402403, y: 6.41511}
-      - {x: -7.0402403, y: 5.9972425}
-      - {x: -6.0373573, y: 5.9972425}
-    - - {x: -7.040241, y: 6.41511}
-      - {x: -7.228281, y: 6.41511}
-      - {x: -7.3118553, y: 6.3733234}
-      - {x: -7.458109, y: 6.2061763}
-      - {x: -7.458109, y: 5.9972425}
-      - {x: -7.040241, y: 5.9972425}
     - - {x: -5.619489, y: 6.1852827}
       - {x: -5.661276, y: 6.2688565}
       - {x: -5.8284235, y: 6.41511}
       - {x: -6.037357, y: 6.41511}
       - {x: -6.037357, y: 5.9972425}
       - {x: -5.619489, y: 5.9972425}
-    - - {x: 8.003009, y: 5.997242}
-      - {x: 7.5851407, y: 5.997242}
-      - {x: 7.5851407, y: 4.9943595}
-      - {x: 8.003009, y: 4.9943595}
-    - - {x: -21.080605, y: 5.537587}
-      - {x: -21.080605, y: 5.5793743}
-      - {x: -17.069073, y: 5.5793743}
+    - - {x: -7.040241, y: 6.41511}
+      - {x: -7.228281, y: 6.41511}
+      - {x: -7.3118553, y: 6.3733234}
+      - {x: -7.458109, y: 6.2061763}
+      - {x: -7.458109, y: 5.9972425}
+      - {x: -7.040241, y: 5.9972425}
+    - - {x: -6.0373573, y: 6.41511}
+      - {x: -7.0402403, y: 6.41511}
+      - {x: -7.0402403, y: 5.9972425}
+      - {x: -6.0373573, y: 5.9972425}
+    - - {x: -16.066189, y: 5.892775}
+      - {x: -16.149763, y: 5.997242}
+      - {x: -17.069073, y: 5.997242}
       - {x: -17.069073, y: 5.203293}
       - {x: -16.525845, y: 4.9943595}
       - {x: -16.066189, y: 4.9943595}
-      - {x: -16.066189, y: 5.892775}
-      - {x: -16.149763, y: 5.997242}
+    - - {x: -21.080605, y: 5.537587}
+      - {x: -21.080605, y: 5.997242}
       - {x: -21.979021, y: 5.997242}
       - {x: -22.083488, y: 5.9136686}
       - {x: -22.083488, y: 4.9943595}
       - {x: -21.28954, y: 4.9943595}
+    - - {x: 10.426643, y: 5.997242}
+      - {x: 10.008775, y: 5.997242}
+      - {x: 10.008775, y: 4.9943595}
+      - {x: 10.426643, y: 4.9943595}
+    - - {x: -11.636788, y: 5.1823993}
+      - {x: -11.6785755, y: 5.265973}
+      - {x: -11.845722, y: 5.4122267}
+      - {x: -13.05754, y: 5.4122267}
+      - {x: -13.05754, y: 5.788308}
+      - {x: -13.60077, y: 5.997242}
+      - {x: -14.060424, y: 5.997242}
+      - {x: -14.060424, y: 5.098826}
+      - {x: -13.97685, y: 4.9943595}
+      - {x: -11.636788, y: 4.9943595}
     - - {x: -7.040241, y: 5.0779324}
       - {x: -7.040241, y: 5.997242}
       - {x: -7.83419, y: 5.997242}
@@ -5631,20 +5865,10 @@ CompositeCollider2D:
       - {x: -6.037357, y: 5.997242}
       - {x: -6.037357, y: 4.9943595}
       - {x: -5.619489, y: 4.9943595}
-    - - {x: -11.636788, y: 5.1823993}
-      - {x: -11.6785755, y: 5.265973}
-      - {x: -11.845722, y: 5.4122267}
-      - {x: -13.05754, y: 5.4122267}
-      - {x: -13.05754, y: 5.788308}
-      - {x: -13.60077, y: 5.997242}
-      - {x: -14.060424, y: 5.997242}
-      - {x: -14.060424, y: 5.098826}
-      - {x: -13.97685, y: 4.9943595}
-      - {x: -11.636788, y: 4.9943595}
-    - - {x: 10.426643, y: 5.997242}
-      - {x: 10.008775, y: 5.997242}
-      - {x: 10.008775, y: 4.9943595}
-      - {x: 10.426643, y: 4.9943595}
+    - - {x: 8.003009, y: 5.997242}
+      - {x: 7.5851407, y: 5.997242}
+      - {x: 7.5851407, y: 4.9943595}
+      - {x: 8.003009, y: 4.9943595}
     - - {x: 13.017426, y: 5.997242}
       - {x: 12.599557, y: 5.997242}
       - {x: 12.599557, y: 4.9943595}
@@ -9087,46 +9311,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -21, y: 5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -20, y: 5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -19, y: 5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -18, y: 5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: -17, y: 5, z: 0}
     second:
       serializedVersion: 2
@@ -10115,7 +10299,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: e65c7cac8e5e1114880d5aed9a1ffb43, type: 2}
   - m_RefCount: 12
     m_Data: {fileID: 11400000, guid: 0fa267be5d99d6740bca8d686dbc25b3, type: 2}
-  - m_RefCount: 236
+  - m_RefCount: 232
     m_Data: {fileID: 11400000, guid: 8739551062960ae49afc0d48e2541c8e, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 589efe5813558c849900103498649e8c, type: 2}
@@ -10148,7 +10332,7 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 35
     m_Data: {fileID: -1707425425, guid: 10b7f57321dfda24e8555c53ad870137, type: 3}
-  - m_RefCount: 236
+  - m_RefCount: 232
     m_Data: {fileID: -615506116, guid: 10b7f57321dfda24e8555c53ad870137, type: 3}
   - m_RefCount: 12
     m_Data: {fileID: 341831719, guid: 7b63ee90d1382424ba1b7bb9c714e730, type: 3}
@@ -10181,7 +10365,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -456668615, guid: db5091f15565d6b4b8327832dd53cda2, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 96
+  - m_RefCount: 92
     m_Data:
       e00: 1
       e01: 0
@@ -10254,7 +10438,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 379
+  - m_RefCount: 375
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -10352,7 +10536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 345727636}
   - component: {fileID: 345727635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10439,7 +10623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 353308833}
   - component: {fileID: 353308832}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arbusto_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10526,7 +10710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 362146155}
   - component: {fileID: 362146154}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Alfombra_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10613,7 +10797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 364909952}
   - component: {fileID: 364909951}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tenedor_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10732,7 +10916,8 @@ GameObject:
   - component: {fileID: 381736985}
   - component: {fileID: 381736987}
   - component: {fileID: 381736986}
-  m_Layer: 0
+  - component: {fileID: 381736988}
+  m_Layer: 9
   m_Name: Walkable (14)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -10825,6 +11010,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &381736988
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381736984}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &405228667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10836,6 +11067,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -10909,7 +11144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 406376255}
   - component: {fileID: 406376254}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Alfombra02_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10997,7 +11232,8 @@ GameObject:
   - component: {fileID: 411490217}
   - component: {fileID: 411490219}
   - component: {fileID: 411490218}
-  m_Layer: 0
+  - component: {fileID: 411490220}
+  m_Layer: 9
   m_Name: Walkable (6)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -11090,6 +11326,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &411490220
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411490216}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &422196066
 GameObject:
   m_ObjectHideFlags: 0
@@ -11132,6 +11414,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -11206,7 +11492,8 @@ GameObject:
   - component: {fileID: 450163753}
   - component: {fileID: 450163755}
   - component: {fileID: 450163754}
-  m_Layer: 0
+  - component: {fileID: 450163756}
+  m_Layer: 9
   m_Name: Walkable (8)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -11299,6 +11586,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &450163756
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450163752}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &451211789
 GameObject:
   m_ObjectHideFlags: 0
@@ -11403,7 +11736,8 @@ GameObject:
   - component: {fileID: 472123967}
   - component: {fileID: 472123969}
   - component: {fileID: 472123968}
-  m_Layer: 0
+  - component: {fileID: 472123970}
+  m_Layer: 9
   m_Name: Walkable (3)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -11496,6 +11830,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &472123970
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472123966}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &473849072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11511,6 +11891,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -12005,6 +12389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maceta01_48x48_0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -12077,7 +12465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 491866748}
   - component: {fileID: 491866747}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taza_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12196,7 +12584,8 @@ GameObject:
   - component: {fileID: 560779152}
   - component: {fileID: 560779154}
   - component: {fileID: 560779153}
-  m_Layer: 0
+  - component: {fileID: 560779155}
+  m_Layer: 9
   m_Name: Walkable (4)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -12289,6 +12678,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &560779155
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560779151}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &565382503
 GameObject:
   m_ObjectHideFlags: 0
@@ -12299,7 +12734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 565382505}
   - component: {fileID: 565382504}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arbusto_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12561,7 +12996,7 @@ MonoBehaviour:
   zoomSpeed: 2
   zoomZensibility: 30
   zoomLimits: {x: -7, y: -15}
-  moveSpeed: 0.05
+  moveSpeed: 7
 --- !u!1 &585899704
 GameObject:
   m_ObjectHideFlags: 0
@@ -12573,7 +13008,8 @@ GameObject:
   - component: {fileID: 585899705}
   - component: {fileID: 585899707}
   - component: {fileID: 585899706}
-  m_Layer: 0
+  - component: {fileID: 585899708}
+  m_Layer: 9
   m_Name: Walkable (18)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -12666,6 +13102,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &585899708
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585899704}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &589598316
 GameObject:
   m_ObjectHideFlags: 0
@@ -12677,7 +13159,8 @@ GameObject:
   - component: {fileID: 589598317}
   - component: {fileID: 589598319}
   - component: {fileID: 589598318}
-  m_Layer: 0
+  - component: {fileID: 589598320}
+  m_Layer: 9
   m_Name: Walkable (7)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -12770,6 +13253,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &589598320
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589598316}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &594410823
 GameObject:
   m_ObjectHideFlags: 0
@@ -12781,7 +13310,8 @@ GameObject:
   - component: {fileID: 594410824}
   - component: {fileID: 594410826}
   - component: {fileID: 594410825}
-  m_Layer: 0
+  - component: {fileID: 594410827}
+  m_Layer: 9
   m_Name: Walkable (12)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -12874,6 +13404,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &594410827
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594410823}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &610490041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12889,6 +13465,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -13088,6 +13668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maceta01_48x48_0 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -13195,6 +13779,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mueble pared01_48x48 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5925305201936265692, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8581079927014313178, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -13268,7 +13856,8 @@ GameObject:
   - component: {fileID: 679897119}
   - component: {fileID: 679897121}
   - component: {fileID: 679897120}
-  m_Layer: 0
+  - component: {fileID: 679897122}
+  m_Layer: 6
   m_Name: Not Walkeable (4)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -13361,6 +13950,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &679897122
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679897118}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &694602627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13376,6 +14011,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -13480,7 +14119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 744877260}
   - component: {fileID: 744877259}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Encimera02_48x48_sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13567,7 +14206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 746125190}
   - component: {fileID: 746125189}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tenedor_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13654,7 +14293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 753858642}
   - component: {fileID: 753858641}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arbusto_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13742,7 +14381,8 @@ GameObject:
   - component: {fileID: 756585829}
   - component: {fileID: 756585831}
   - component: {fileID: 756585830}
-  m_Layer: 0
+  - component: {fileID: 756585832}
+  m_Layer: 9
   m_Name: Walkable (13)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -13835,6 +14475,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &756585832
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756585828}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &758067841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13899,6 +14585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "MuebleBa\xF1o_Fregadero_0 (2)"
       objectReference: {fileID: 0}
+    - target: {fileID: 2267651366130281973, guid: aec01d81e90e3fc46911901b43718751, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13920,6 +14610,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -14277,7 +14971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 792247698}
   - component: {fileID: 792247697}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plato_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14365,7 +15059,8 @@ GameObject:
   - component: {fileID: 802533563}
   - component: {fileID: 802533565}
   - component: {fileID: 802533564}
-  m_Layer: 0
+  - component: {fileID: 802533566}
+  m_Layer: 9
   m_Name: Walkable (11)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -14458,6 +15153,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &802533566
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802533562}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &804865431
 GameObject:
   m_ObjectHideFlags: 0
@@ -14468,7 +15209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 804865433}
   - component: {fileID: 804865432}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taza_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14729,7 +15470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 824449426}
   - component: {fileID: 824449425}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tenedor_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14817,7 +15558,8 @@ GameObject:
   - component: {fileID: 827763017}
   - component: {fileID: 827763019}
   - component: {fileID: 827763018}
-  m_Layer: 0
+  - component: {fileID: 827763020}
+  m_Layer: 9
   m_Name: Walkable (19)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -14910,6 +15652,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &827763020
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827763016}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &834621827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14973,6 +15761,10 @@ PrefabInstance:
     - target: {fileID: 2267651366130281973, guid: aec01d81e90e3fc46911901b43718751, type: 3}
       propertyPath: m_Name
       value: "MuebleBa\xF1o_Fregadero_0 (3)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267651366130281973, guid: aec01d81e90e3fc46911901b43718751, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15319,7 +16111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 844350877}
   - component: {fileID: 844350876}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15406,7 +16198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 845057067}
   - component: {fileID: 845057066}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plato_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15494,7 +16286,8 @@ GameObject:
   - component: {fileID: 850503046}
   - component: {fileID: 850503048}
   - component: {fileID: 850503047}
-  m_Layer: 0
+  - component: {fileID: 850503049}
+  m_Layer: 9
   m_Name: Walkable (2)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -15587,6 +16380,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &850503049
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850503045}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &864189008
 GameObject:
   m_ObjectHideFlags: 0
@@ -22086,7 +22925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 872373889}
   - component: {fileID: 872373888}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22266,7 +23105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 944349843}
   - component: {fileID: 944349842}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plato_0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22355,6 +23194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maceta01_48x48_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6695415
@@ -22427,7 +23270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 955042412}
   - component: {fileID: 955042411}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taza_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22562,7 +23405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 995080949}
   - component: {fileID: 995080948}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22681,6 +23524,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -23031,7 +23878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1040413947}
   - component: {fileID: 1040413946}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23150,7 +23997,8 @@ GameObject:
   - component: {fileID: 1069923649}
   - component: {fileID: 1069923651}
   - component: {fileID: 1069923650}
-  m_Layer: 0
+  - component: {fileID: 1069923652}
+  m_Layer: 9
   m_Name: Walkable (10)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -23243,6 +24091,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1069923652
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069923648}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1079275096
 GameObject:
   m_ObjectHideFlags: 0
@@ -23253,7 +24147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1079275098}
   - component: {fileID: 1079275097}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23394,6 +24288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "MuebleBa\xF1o_Fregadero_0 (1)"
       objectReference: {fileID: 0}
+    - target: {fileID: 2267651366130281973, guid: aec01d81e90e3fc46911901b43718751, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23446,6 +24344,10 @@ PrefabInstance:
     - target: {fileID: 5925305201936265692, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
       propertyPath: m_Name
       value: Mueble pared01_48x48 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5925305201936265692, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8581079927014313178, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
       propertyPath: m_LocalScale.x
@@ -23519,7 +24421,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1117994056}
   - component: {fileID: 1117994055}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Alfombra_0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23606,7 +24508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1120443956}
   - component: {fileID: 1120443955}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arbusto_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23768,7 +24670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1144935476}
   - component: {fileID: 1144935475}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Alfombra_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23866,7 +24768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1150056124}
   - component: {fileID: 1150056123}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plato_0 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24006,6 +24908,10 @@ PrefabInstance:
     - target: {fileID: 7392110578910203035, guid: 1c4b43d594530344fbf87b53f081009c, type: 3}
       propertyPath: m_Name
       value: Armario_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7392110578910203035, guid: 1c4b43d594530344fbf87b53f081009c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24256,7 +25162,8 @@ GameObject:
   - component: {fileID: 1211347881}
   - component: {fileID: 1211347883}
   - component: {fileID: 1211347882}
-  m_Layer: 0
+  - component: {fileID: 1211347884}
+  m_Layer: 6
   m_Name: Not Walkeable (5)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -24349,6 +25256,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1211347884
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211347880}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1228985285
 GameObject:
   m_ObjectHideFlags: 0
@@ -24454,7 +25407,7 @@ GameObject:
   - component: {fileID: 1247609498}
   - component: {fileID: 1247609497}
   - component: {fileID: 1247609496}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: vater_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24604,7 +25557,8 @@ GameObject:
   - component: {fileID: 1254600175}
   - component: {fileID: 1254600177}
   - component: {fileID: 1254600176}
-  m_Layer: 0
+  - component: {fileID: 1254600178}
+  m_Layer: 9
   m_Name: Walkable
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -24697,6 +25651,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1254600178
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254600174}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1257788251
 GameObject:
   m_ObjectHideFlags: 0
@@ -24740,7 +25740,7 @@ GameObject:
   - component: {fileID: 1264936984}
   - component: {fileID: 1264936983}
   - component: {fileID: 1264936982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: vater_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24891,6 +25891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maceta01_48x48_0
       objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6808369
@@ -24995,7 +25999,8 @@ GameObject:
   - component: {fileID: 1300195806}
   - component: {fileID: 1300195808}
   - component: {fileID: 1300195807}
-  m_Layer: 0
+  - component: {fileID: 1300195809}
+  m_Layer: 6
   m_Name: Not Walkeable (6)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -25088,6 +26093,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1300195809
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300195805}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1309458204
 GameObject:
   m_ObjectHideFlags: 0
@@ -25098,7 +26149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1309458206}
   - component: {fileID: 1309458205}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taza_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25187,6 +26238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mueble01_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1405127619326693815, guid: 178b198e6cf0d21469072fe98b3f7468, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5833722363623514613, guid: 178b198e6cf0d21469072fe98b3f7468, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3209438
@@ -25259,7 +26314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1321728376}
   - component: {fileID: 1321728375}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25377,7 +26432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1349537204}
   - component: {fileID: 1349537203}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Vitroceramica_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25464,7 +26519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1365442510}
   - component: {fileID: 1365442509}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25582,7 +26637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1396949843}
   - component: {fileID: 1396949842}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taza_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25670,7 +26725,8 @@ GameObject:
   - component: {fileID: 1397470727}
   - component: {fileID: 1397470729}
   - component: {fileID: 1397470728}
-  m_Layer: 0
+  - component: {fileID: 1397470730}
+  m_Layer: 9
   m_Name: Walkable (16)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -25763,6 +26819,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1397470730
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397470726}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402591121
 GameObject:
   m_ObjectHideFlags: 0
@@ -25805,7 +26907,8 @@ GameObject:
   - component: {fileID: 1419449838}
   - component: {fileID: 1419449840}
   - component: {fileID: 1419449839}
-  m_Layer: 0
+  - component: {fileID: 1419449841}
+  m_Layer: 9
   m_Name: Walkable (15)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -25898,6 +27001,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1419449841
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419449837}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1422917030
 GameObject:
   m_ObjectHideFlags: 0
@@ -26242,7 +27391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1441705716}
   - component: {fileID: 1441705715}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plato_0 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26329,7 +27478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442359480}
   - component: {fileID: 1442359479}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26448,7 +27597,8 @@ GameObject:
   - component: {fileID: 1444916330}
   - component: {fileID: 1444916332}
   - component: {fileID: 1444916331}
-  m_Layer: 0
+  - component: {fileID: 1444916333}
+  m_Layer: 9
   m_Name: Walkable (9)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -26541,6 +27691,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1444916333
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444916329}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1447936115
 GameObject:
   m_ObjectHideFlags: 0
@@ -26553,7 +27749,7 @@ GameObject:
   - component: {fileID: 1447936118}
   - component: {fileID: 1447936117}
   - component: {fileID: 1447936116}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_48x48_sheet_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26760,6 +27956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armario_0 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7392110578910203035, guid: 1c4b43d594530344fbf87b53f081009c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26811,7 +28011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1487962561}
   - component: {fileID: 1487962560}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26898,7 +28098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1494284713}
   - component: {fileID: 1494284712}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fregadero_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26985,7 +28185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1512542127}
   - component: {fileID: 1512542126}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27297,6 +28497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armario_0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7392110578910203035, guid: 1c4b43d594530344fbf87b53f081009c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27318,6 +28522,10 @@ PrefabInstance:
     - target: {fileID: 5925305201936265692, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
       propertyPath: m_Name
       value: Mueble pared01_48x48 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5925305201936265692, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8581079927014313178, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
       propertyPath: m_LocalScale.x
@@ -27392,7 +28600,8 @@ GameObject:
   - component: {fileID: 1547689854}
   - component: {fileID: 1547689856}
   - component: {fileID: 1547689855}
-  m_Layer: 0
+  - component: {fileID: 1547689857}
+  m_Layer: 6
   m_Name: Not Walkeable
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -27485,6 +28694,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1547689857
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547689853}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1549252748
 GameObject:
   m_ObjectHideFlags: 0
@@ -27526,7 +28781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1569336010}
   - component: {fileID: 1569336009}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27614,7 +28869,8 @@ GameObject:
   - component: {fileID: 1573041190}
   - component: {fileID: 1573041192}
   - component: {fileID: 1573041191}
-  m_Layer: 0
+  - component: {fileID: 1573041193}
+  m_Layer: 6
   m_Name: Not Walkeable (3)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -27707,6 +28963,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1573041193
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573041189}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1575371911
 GameObject:
   m_ObjectHideFlags: 0
@@ -27717,7 +29019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1575371913}
   - component: {fileID: 1575371912}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27804,7 +29106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1576636742}
   - component: {fileID: 1576636741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plato_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27891,7 +29193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1610351453}
   - component: {fileID: 1610351452}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Alfombra_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28010,7 +29312,8 @@ GameObject:
   - component: {fileID: 1659389161}
   - component: {fileID: 1659389163}
   - component: {fileID: 1659389162}
-  m_Layer: 0
+  - component: {fileID: 1659389164}
+  m_Layer: 9
   m_Name: Walkable (1)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -28103,6 +29406,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1659389164
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659389160}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &1700357580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28114,6 +29463,10 @@ PrefabInstance:
     - target: {fileID: 5925305201936265692, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
       propertyPath: m_Name
       value: Mueble pared01_48x48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5925305201936265692, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8581079927014313178, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
       propertyPath: m_LocalScale.x
@@ -28187,7 +29540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1703841902}
   - component: {fileID: 1703841901}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arbusto_0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28276,6 +29629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maceta01_48x48_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -28349,6 +29706,10 @@ PrefabInstance:
     - target: {fileID: 5925305201936265692, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
       propertyPath: m_Name
       value: Mueble pared01_48x48 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5925305201936265692, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8581079927014313178, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
       propertyPath: m_LocalScale.x
@@ -28556,7 +29917,7 @@ GameObject:
   - component: {fileID: 1752794471}
   - component: {fileID: 1752794470}
   - component: {fileID: 1752794469}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: vater_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28946,7 +30307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1774273436}
   - component: {fileID: 1774273435}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plato_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29035,6 +30396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maceta01_48x48_0 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -29107,7 +30472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1803663470}
   - component: {fileID: 1803663469}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Alfombra_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29331,7 +30696,8 @@ GameObject:
   - component: {fileID: 1808080834}
   - component: {fileID: 1808080836}
   - component: {fileID: 1808080835}
-  m_Layer: 0
+  - component: {fileID: 1808080837}
+  m_Layer: 6
   m_Name: Not Walkeable (2)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -29424,6 +30790,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1808080837
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808080833}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1827759039
 GameObject:
   m_ObjectHideFlags: 0
@@ -30086,7 +31498,8 @@ GameObject:
   - component: {fileID: 1848864836}
   - component: {fileID: 1848864838}
   - component: {fileID: 1848864837}
-  m_Layer: 0
+  - component: {fileID: 1848864839}
+  m_Layer: 6
   m_Name: Not Walkeable (7)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -30179,6 +31592,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1848864839
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848864835}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &1849629691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30190,6 +31649,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -30263,7 +31726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1857879521}
   - component: {fileID: 1857879520}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Alfombra_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30382,6 +31845,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -30622,7 +32089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1896287202}
   - component: {fileID: 1896287201}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30915,6 +32382,12 @@ Transform:
   - {fileID: 594410824}
   - {fileID: 756585829}
   - {fileID: 827763017}
+  - {fileID: 381736985}
+  - {fileID: 1419449838}
+  - {fileID: 1397470727}
+  - {fileID: 486537}
+  - {fileID: 585899705}
+  - {fileID: 589598317}
   - {fileID: 163681456}
   - {fileID: 1547689854}
   - {fileID: 1808080834}
@@ -30924,12 +32397,6 @@ Transform:
   - {fileID: 1300195806}
   - {fileID: 1848864836}
   - {fileID: 86814504}
-  - {fileID: 381736985}
-  - {fileID: 1419449838}
-  - {fileID: 1397470727}
-  - {fileID: 486537}
-  - {fileID: 585899705}
-  - {fileID: 589598317}
   - {fileID: 7642302188373458440}
   - {fileID: 7830248735175537023}
   - {fileID: 1532583139}
@@ -31063,6 +32530,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -31253,6 +32724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mueble pared01_48x48 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5925305201936265692, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8581079927014313178, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -31331,6 +32806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maceta01_48x48_0 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -31404,6 +32883,10 @@ PrefabInstance:
     - target: {fileID: 5925305201936265692, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
       propertyPath: m_Name
       value: Mueble pared01_48x48 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5925305201936265692, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8581079927014313178, guid: b7ebe55d091ec794196637ce91132cc8, type: 3}
       propertyPath: m_LocalScale.x
@@ -31570,7 +33053,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2084556859}
   - component: {fileID: 2084556858}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plato_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31657,7 +33140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2100400878}
   - component: {fileID: 2100400877}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31744,7 +33227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2106830515}
   - component: {fileID: 2106830514}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Florero02_0 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31947,6 +33430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armario_0 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7392110578910203035, guid: 1c4b43d594530344fbf87b53f081009c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32106,6 +33593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piano_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7898622929546715294, guid: 3ff8796c9e08d1040afed8219d6818af, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32183,6 +33674,10 @@ PrefabInstance:
     - target: {fileID: 8550425239291757971, guid: 093a7f28a33259e4e942e6cf7efd5d13, type: 3}
       propertyPath: m_Name
       value: Sofa_48x48_sheet_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550425239291757971, guid: 093a7f28a33259e4e942e6cf7efd5d13, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32450,6 +33945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mueble01_0
       objectReference: {fileID: 0}
+    - target: {fileID: 1405127619326693815, guid: 178b198e6cf0d21469072fe98b3f7468, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5833722363623514613, guid: 178b198e6cf0d21469072fe98b3f7468, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0467896
@@ -32523,6 +34022,10 @@ PrefabInstance:
     - target: {fileID: 3304101257507544229, guid: dc08340ae0d3c5c4b908ecf95d7201d1, type: 3}
       propertyPath: m_Name
       value: Mueble pared02_48x48_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3304101257507544229, guid: dc08340ae0d3c5c4b908ecf95d7201d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6490779905179672476, guid: dc08340ae0d3c5c4b908ecf95d7201d1, type: 3}
       propertyPath: m_LocalScale.x
@@ -32601,6 +34104,10 @@ PrefabInstance:
     - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_Name
       value: Maceta01_48x48_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805954308892744200, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6803293095424911946, guid: a852837fdb9ae4648aa4a06f2cb1243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -32732,6 +34239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armario_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7392110578910203035, guid: 1c4b43d594530344fbf87b53f081009c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32753,6 +34264,10 @@ PrefabInstance:
     - target: {fileID: 1415541817600022697, guid: 253eec7b60e370b45ab691c2de3d2bc8, type: 3}
       propertyPath: m_Name
       value: Radio_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1415541817600022697, guid: 253eec7b60e370b45ab691c2de3d2bc8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7857403591982899779, guid: 253eec7b60e370b45ab691c2de3d2bc8, type: 3}
       propertyPath: m_LocalScale.x
@@ -32880,6 +34395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tele_0
       objectReference: {fileID: 0}
+    - target: {fileID: 1111305363820346440, guid: 310a4a62988d8aa4c9c34e50d1ca360e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32953,6 +34472,10 @@ PrefabInstance:
     - target: {fileID: 2267651366130281973, guid: aec01d81e90e3fc46911901b43718751, type: 3}
       propertyPath: m_Name
       value: "MuebleBa\xF1o_Fregadero_0"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267651366130281973, guid: aec01d81e90e3fc46911901b43718751, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

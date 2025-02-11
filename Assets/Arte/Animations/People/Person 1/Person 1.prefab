@@ -467,7 +467,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_Sprite: {fileID: -7823358538276678986, guid: fd27628791c5d4b4ea23f5a317577e36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1039,6 +1039,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 503
   NPCCollider: {fileID: 8008395487983213131}
+  redVisible: 0
+  blueVisibleAndDead: 0
+  someoneElse: 0
 --- !u!1 &6795411576385096310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,7 +1270,7 @@ MonoBehaviour:
   inyectedState: 0
   examinate: 0
   bodyTarget: {fileID: 0}
-  determine: 0
+  checking: 0
   alert: 0
   bloqMovement: 0
   dead: 0

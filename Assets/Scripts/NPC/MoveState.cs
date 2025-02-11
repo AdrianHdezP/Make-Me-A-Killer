@@ -10,47 +10,34 @@ public class MoveState : NPCState
     {
         base.Enter();
 
-        if (!NPC.inyectedState)
-            NPC.SetNextTarget();
+        if (!npc.inyectedState)
+            npc.SetNextTarget();
 
-        if (NPC.alert)
-            NPC.alertEmote.SetActive(true);
+        if (npc.alert)
+            npc.alertEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        NPC.inyectedState = false;
+        npc.inyectedState = false;
+        npc.lastTargetPos = null;
 
-        if (NPC.alert)
-            NPC.alertEmote.SetActive(false);
+        if (npc.alert)
+            npc.alertEmote.SetActive(false);
     }
 
     public override void Update()
     {
         base.Update();
 
-        if (NPC.examinate && !NPC.alert)
-        {
-            NPC.MoveToTarget(NPC.bodyTarget);
+        npc.MoveToTarget();
 
-            if (Vector2.Distance(NPC.transform.position, NPC.bodyTarget.position) <= NPC.agent.stoppingDistance + 0.5f)
-                stateMachine.ChangeState(NPC.examinateBodyState);
-        }
-        else if (!NPC.examinate && NPC.alert)
+        if (Vector2.Distance(npc.transform.position, npc.nextState.targetTransform.position) <= npc.agent.stoppingDistance + 0.5f)
         {
-            NPC.MoveToTarget(NPC.door);
-
-            if (Vector2.Distance(NPC.transform.position, NPC.door.position) <= NPC.agent.stoppingDistance + 0.5f)
-                stateMachine.ChangeState(NPC.alertState);
-        }
-        else if (!NPC.examinate && !NPC.alert)
-        {
-            NPC.MoveToTarget();
-
-            if (Vector2.Distance(NPC.transform.position, NPC.nextState.targetTransform.position) <= NPC.agent.stoppingDistance + 0.5f)
-                stateMachine.ChangeState(NPC.nextState);
-        }
+            stateMachine.ChangeState(npc.nextState);
+        }          
     }
 }
+

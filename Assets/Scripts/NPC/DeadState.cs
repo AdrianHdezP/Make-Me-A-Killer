@@ -10,8 +10,9 @@ public class DeadState : NPCState
     {
         base.Enter();
 
-        NPC.dead = true;
-        NPC.agent.destination = NPC.transform.position;
+        npc.dead = true;
+        npc.agent.destination = npc.transform.position;
+        npc.spriteRenderer.sortingOrder = 2;
     }
 
     public override void Exit()

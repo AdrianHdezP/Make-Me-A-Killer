@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class NPCState
 {
-    protected NPC NPC;
+    protected NPC npc;
     protected NPCStateMachine stateMachine;
     private string animBoolName;
     public Transform targetTransform;
@@ -13,14 +13,14 @@ public class NPCState
 
     public NPCState(NPC _NPC, NPCStateMachine _stateMachine, string _animBoolName)
     {
-        this.NPC = _NPC;
+        this.npc = _NPC;
         this.stateMachine = _stateMachine;
         this.animBoolName = _animBoolName;
     }
 
     public NPCState(NPC _NPC, NPCStateMachine _stateMachine, string _animBoolName, Transform _targetTransform, int _stateProbability, float _stateTimeDuration)
     {
-        this.NPC = _NPC;
+        this.npc = _NPC;
         this.stateMachine = _stateMachine;
         this.animBoolName = _animBoolName;
         this.targetTransform = _targetTransform;
@@ -30,7 +30,7 @@ public class NPCState
 
     public virtual void Enter()
     {
-        NPC.anim.SetBool(animBoolName, true);
+        npc.anim.SetBool(animBoolName, true);
         stateTimer = stateTimeDuration; //SET LA DURACION AQUI PARA PODER DARSELA COMO VALOR AL CREAR EL STATE!!!
     }
 
@@ -41,6 +41,6 @@ public class NPCState
 
     public virtual void Exit()
     {
-        NPC.anim.SetBool(animBoolName, false);
+        npc.anim.SetBool(animBoolName, false);
     }
 }

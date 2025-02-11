@@ -10,14 +10,14 @@ public class DrinkState : NPCState
     {
         base.Enter();
 
-        NPC.drinkEmote.SetActive(true);
+        npc.drinkEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        NPC.drinkEmote.SetActive(false);
+        npc.drinkEmote.SetActive(false);
     }
 
     public override void Update()
@@ -25,6 +25,6 @@ public class DrinkState : NPCState
         base.Update();
 
         if (stateTimer <= 0)
-            stateMachine.ChangeState(NPC.moveState);
+            stateMachine.ChangeState(npc.moveState);
     }
 }

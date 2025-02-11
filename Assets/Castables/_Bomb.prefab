@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6855794880464329085}
   - component: {fileID: 8293411203625745548}
   - component: {fileID: 6841172089945083549}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: _Bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,10 +113,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderer_: {fileID: 6841172089945083549}
   collider_: {fileID: 6855794880464329085}
+  floorLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
   placed: 0
   canBePlaced: 0
-  castingColor: {r: 0.4542987, g: 0.5401717, b: 0.7830189, a: 0.5176471}
-  blockedColor: {r: 0.6603774, g: 0.09656461, b: 0.09656461, a: 0.28235295}
+  castingColor: {r: 0.3160377, g: 0.49517065, b: 1, a: 0.5176471}
+  blockedColor: {r: 1, g: 0, b: 0, a: 0.87058824}
   placedColor: {r: 1, g: 1, b: 1, a: 1}
   bomb: {fileID: 9024200875058311049}
   bombAnim: {fileID: 5878763061559389620}
@@ -188,7 +194,7 @@ GameObject:
   - component: {fileID: 2136243409048042683}
   - component: {fileID: 1999791576133663990}
   - component: {fileID: 5878763061559389620}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: _Bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}

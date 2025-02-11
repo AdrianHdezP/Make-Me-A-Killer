@@ -10,14 +10,14 @@ public class MusicState : NPCState
     {
         base.Enter();
 
-        NPC.musicEmote.SetActive(true);
+        npc.musicEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        NPC.musicEmote.SetActive(false);
+        npc.musicEmote.SetActive(false);
     }
 
     public override void Update()
@@ -25,6 +25,6 @@ public class MusicState : NPCState
         base.Update();
 
         if (stateTimer <= 0)
-            stateMachine.ChangeState(NPC.moveState);
+            stateMachine.ChangeState(npc.moveState);
     }
 }

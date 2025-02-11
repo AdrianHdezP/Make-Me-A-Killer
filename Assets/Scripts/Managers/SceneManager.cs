@@ -28,15 +28,21 @@ public class SceneManager : MonoBehaviour
     IEnumerator TranstionScene(string sceneName)
     {
         float t = 0;
+        Color color = image.color;
+
         while (t < 0.2f)
         {
-            Color color = image.color;
+            color = image.color;
             color.a = t / 0.2f;
             image.color = color;
 
             t += Time.deltaTime;
             yield return null;
         }
+
+        color = image.color;
+        color.a = 1;
+        image.color = color;
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
 
@@ -46,9 +52,11 @@ public class SceneManager : MonoBehaviour
     IEnumerator EnterScene()
     {
         float t = 0;
+        Color color = image.color;
+
         while (t < 1.5f)
         {
-            Color color = image.color;
+            color = image.color;
             color.a = 1 - t / 1.5f;
             image.color = color;
 
@@ -56,6 +64,10 @@ public class SceneManager : MonoBehaviour
 
             yield return null;
         }
+
+        color = image.color;
+        color.a = 0f;
+        image.color = color;
 
         coroutine = null;
     }

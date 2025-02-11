@@ -26,6 +26,8 @@ public class CasterTelephone : Caster
     {
         if (!placed)
         {
+            canBePlaced = SetPlaceState();
+
             if (!canBePlaced) renderer_.color = blockedColor;
             else renderer_.color = castingColor;
         }

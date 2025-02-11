@@ -96,11 +96,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7315008754047010502}
-  - component: {fileID: 6398942878372466444}
-  - component: {fileID: 6855794880464329085}
   - component: {fileID: 8200467536021226261}
   - component: {fileID: 3379187261541983409}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: _Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,69 +124,6 @@ Transform:
   - {fileID: 267931330124456288}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &6398942878372466444
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711505814984584307}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &6855794880464329085
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711505814984584307}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.38
 --- !u!114 &8200467536021226261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,18 +137,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderer_: {fileID: 6771998514747185252}
-  collider_: {fileID: 6855794880464329085}
+  collider_: {fileID: 6340453696997645498}
+  floorLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
   placed: 0
   canBePlaced: 1
-  castingColor: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 0.49411765}
+  castingColor: {r: 0, g: 0.47046375, b: 1, a: 0.49411765}
   blockedColor: {r: 1, g: 0, b: 0, a: 0.65882355}
-  placedColor: {r: 1, g: 1, b: 1, a: 0.16470589}
+  placedColor: {r: 1, g: 1, b: 1, a: 0.49019608}
   SmokeAnim: {fileID: 3379187261541983409}
   smokeParticles: {fileID: 4241453032259988886}
   smokeZone: {fileID: 6340453696997645498}
-  hitBox: {fileID: 6855794880464329085}
   granade: {fileID: 267931330124456288}
-  smokeTimer: 25
+  smokeTimer: 20
 --- !u!95 &3379187261541983409
 Animator:
   serializedVersion: 7

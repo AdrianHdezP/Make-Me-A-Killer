@@ -17,6 +17,8 @@ public class NPC : MonoBehaviour
     public SpriteRenderer spriteRenderer { get; private set; }
     public NavMeshAgent agent { get; private set; }
 
+    public NPCView view { get; private set; }
+
     #endregion
 
     #region States
@@ -39,13 +41,16 @@ public class NPC : MonoBehaviour
     public TVState tvState { get; private set; }
     public PeeState peeState { get; private set; }
 
-    public ExaminateBodyState examinateBodyState { get; private set; }
-    public AlertState alertState { get; private set; }
+   // public ExaminateBodyState examinateBodyState { get; private set; }
+   // public AlertState alertState { get; private set; }
+
     public DeadState deadState { get; private set; }
 
     #endregion
 
     #region Variables
+
+    public Vector3? lastTargetPos;
 
     [Header("Type")]
     public NPCType type;
@@ -108,8 +113,6 @@ public class NPC : MonoBehaviour
     [HideInInspector] public Targets targets;
     [HideInInspector] public bool inyectedState;
     [HideInInspector] public bool examinate;
-    [HideInInspector] public Transform bodyTarget;
-    [HideInInspector] public bool determine;
     [HideInInspector] public bool alert;
     [HideInInspector] public bool bloqMovement;
     [HideInInspector] public bool dead;
@@ -137,8 +140,8 @@ public class NPC : MonoBehaviour
         tvState = new TVState(this, stateMachine, "Idle", targets.tvTransform, tvStateProbability, tvStateTimeDuration);
         peeState = new PeeState(this, stateMachine, "Idle", targets.peeTransform, peeStateProbability, peeStateTimeDuration);
 
-        examinateBodyState = new ExaminateBodyState(this, stateMachine, "Idle");
-        alertState = new AlertState(this, stateMachine, "Idle");
+       // examinateBodyState = new ExaminateBodyState(this, stateMachine, "Idle");
+       // alertState = new AlertState(this, stateMachine, "Idle");
         deadState = new DeadState(this, stateMachine, "Dead");
 
         states = new List<NPCState>();
@@ -156,6 +159,7 @@ public class NPC : MonoBehaviour
 
         anim = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        view = GetComponentInChildren<NPCView>();
         manager = FindFirstObjectByType<SceneManager>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
@@ -178,13 +182,21 @@ public class NPC : MonoBehaviour
              manager.LoadScene("Lose");
         }
 
-        if (agent.velocity.magnitude > 0)
+        if (agent.velocity.magnitude > 0 && !examinate)
             anim.transform.up = agent.velocity.normalized;
     }
 
     public void MoveToTarget()
     {
-        agent.SetDestination(nextState.targetTransform.position);
+        if (nextState.targetTransform)
+        {
+            lastTargetPos = nextState.targetTransform.position;
+            agent.SetDestination(nextState.targetTransform.position);
+        }
+        else
+        {
+            agent.SetDestination((Vector3)lastTargetPos);
+        }
 
         if ((agent.CalculatePath(nextState.targetTransform.position, agent.path) && agent.pathStatus == NavMeshPathStatus.PathComplete) == false)
         {

@@ -48,11 +48,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderer_: {fileID: 4634208594861116754}
   collider_: {fileID: 0}
+  floorLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
   placed: 0
   canBePlaced: 1
-  castingColor: {r: 1, g: 1, b: 1, a: 0.78039217}
-  blockedColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.6117647}
-  placedColor: {r: 1, g: 1, b: 1, a: 0.9372549}
+  castingColor: {r: 0.1462264, g: 0.5310737, b: 1, a: 0.6156863}
+  blockedColor: {r: 1, g: 0, b: 0, a: 0.6117647}
+  placedColor: {r: 1, g: 1, b: 1, a: 1}
   phoneAnim: {fileID: 4818257185147223331}
   audioSource: {fileID: 7637526777859897011}
   callLimits: {x: 2, y: 4}

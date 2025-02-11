@@ -168,11 +168,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderer_: {fileID: 9135086611594249984}
   collider_: {fileID: 6855794880464329085}
+  floorLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
   placed: 0
   canBePlaced: 1
-  castingColor: {r: 0.6886792, g: 0.0032484946, b: 0.0032484946, a: 0.78039217}
-  blockedColor: {r: 0, g: 0, b: 0, a: 0.09019608}
-  placedColor: {r: 0.6698113, g: 0, b: 0, a: 0.7019608}
+  castingColor: {r: 0, g: 0.5297195, b: 0.9622642, a: 0.78039217}
+  blockedColor: {r: 1, g: 0, b: 0.0743804, a: 0.6117647}
+  placedColor: {r: 1, g: 1, b: 1, a: 0.7019608}
   knifeAnim: {fileID: 4818257185147223331}
 --- !u!1 &6515998119556144261
 GameObject:

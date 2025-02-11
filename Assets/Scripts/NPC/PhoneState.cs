@@ -10,14 +10,14 @@ public class PhoneState : NPCState
     {
         base.Enter();
 
-        NPC.phoneEmote.SetActive(true);
+        npc.phoneEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        NPC.phoneEmote.SetActive(false);
+        npc.phoneEmote.SetActive(false);
     }
 
     public override void Update()
@@ -25,6 +25,6 @@ public class PhoneState : NPCState
         base.Update();
 
         if (stateTimer <= 0)
-            stateMachine.ChangeState(NPC.moveState);
+            stateMachine.ChangeState(npc.moveState);
     }
 }

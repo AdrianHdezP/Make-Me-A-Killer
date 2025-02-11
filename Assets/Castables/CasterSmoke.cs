@@ -6,7 +6,6 @@ public class CasterSmoke : Caster
     [SerializeField] Animator SmokeAnim;
     [SerializeField] ParticleSystem smokeParticles;
     [SerializeField] Collider2D smokeZone;
-    [SerializeField] Collider2D hitBox;
     [SerializeField] Transform granade;
 
     bool formed;
@@ -23,13 +22,14 @@ public class CasterSmoke : Caster
         renderer_.color = castingColor;
 
         smokeZone.enabled = false;
-        hitBox.enabled = true;
     }
 
     private void Update()
     {
         if (!placed)
         {
+            canBePlaced = SetPlaceState();
+
             if (!canBePlaced) renderer_.color = blockedColor;
             else renderer_.color = castingColor;
         }
@@ -54,7 +54,7 @@ public class CasterSmoke : Caster
             {
                 formed = false;
 
-                for (int i = 0; i < npcs.Count;)   
+                for (int i = 0; i < npcs.Count;)
                 {
                     npcs[i].hidden--;
                     npcs.RemoveAt(i);
@@ -73,7 +73,7 @@ public class CasterSmoke : Caster
             npc.hidden++;
         }
 
-        if (!placed) canBePlaced = false;
+        //if (!placed) canBePlaced = false;
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -83,17 +83,16 @@ public class CasterSmoke : Caster
             npc.hidden--;
         }
 
-        if (!placed) canBePlaced = true;
+        //if (!placed) canBePlaced = true;
     }
 
     public override void Place()
     {
         smokeZone.enabled = true;
-        hitBox.enabled = false;
 
         placed = true;
-        renderer_.color = placedColor; 
-        
+        renderer_.color = placedColor;
+
         SmokeAnim.SetTrigger("Deploy");
         smokeParticles.Play();
     }

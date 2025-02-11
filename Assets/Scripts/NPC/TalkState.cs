@@ -10,14 +10,14 @@ public class TalkState : NPCState
     {
         base.Enter();
 
-        NPC.talkEmote.SetActive(true);
+        npc.talkEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        NPC.talkEmote.SetActive(false);
+        npc.talkEmote.SetActive(false);
     }
 
     public override void Update()
@@ -25,6 +25,6 @@ public class TalkState : NPCState
         base.Update();
 
         if (stateTimer <= 0)
-            stateMachine.ChangeState(NPC.moveState);
+            stateMachine.ChangeState(npc.moveState);
     }
 }

@@ -12,7 +12,7 @@ public class NPCView : MonoBehaviour
     //private Vector3 origin;
     private float startingAngle;
     private float fov;
-    private List<NPC> seenNPC = new List<NPC>();
+    [HideInInspector] public List<NPC> seenNPC = new List<NPC>();
 
 
     private void Start()
@@ -25,64 +25,14 @@ public class NPCView : MonoBehaviour
 
     private void Update()
     {
-        bool redVisible = false;
-        bool blueVisibleAndDead = false;    
-        bool someoneElse = false;
-
         // Para todos los NPC que estoy viendo
         for (int i = 0; i < seenNPC.Count; i++)
         {
-            // Si yo soy normal y estoy viendo al rojo
-            if (npc.type == NPCType.normal && seenNPC[i].type == NPCType.red)
-            {
-                redVisible = true;
-            }
-
-            // Si yo soy normal y estoy viendo al azul muerto
-            if (npc.type == NPCType.normal && seenNPC[i].type == NPCType.blue && seenNPC[i].dead)
-            {
-                blueVisibleAndDead = true;
-            }
-
-            if (npc.type == NPCType.normal && seenNPC[i].type == NPCType.normal)
-            {
-                someoneElse = true;
-            }
-
-            // Si yo soy el rojo y estoy viendo al azul muerto
-            if (npc.type == NPCType.red && seenNPC[i].type == NPCType.blue && seenNPC[i].dead && !npc.examinate)
-            {
-                npc.bodyTarget = seenNPC[i].transform;
-                npc.examinate = true;
-                npc.InyectedState(npc.examinateBodyState);
-            }
-
-            // Si yo soy normal o el rojo y estoy viendo al azul muerto y aun no lo estoy examinando ni estoy alerta
+            // Entrar en estado investigate
             if (seenNPC[i].dead && !npc.examinate && !npc.alert)
             {
-                npc.bodyTarget = seenNPC[i].transform;
-                npc.examinate = true;
-                npc.InyectedState(npc.examinateBodyState);
-            }
-
-            // Si yo soy normal y estoy viendo al azul muerto, lo estoy examinando, lo estoy determinando y no estoy alerta
-            if (seenNPC[i].dead && npc.examinate && npc.determine && !npc.alert)
-            {
-                if (seenNPC[i].type == NPCType.blue && npc.type == NPCType.red)
-                    npc.bloqMovement = true;
-
-                npc.alert = true;
-                npc.InyectedState(npc.alertState);
-                npc.determine = false;
-
-                if (blueVisibleAndDead && redVisible && !someoneElse)
-                {
-                    npc.win = true;
-                }
-                else
-                {
-                    npc.loose = true;
-                }
+                ExaminateBodyState examinateState = new ExaminateBodyState(npc, npc.stateMachine, "Idle", seenNPC[i].transform, 100, 4);
+                npc.InyectedState(examinateState);
             }
         }
     }
@@ -91,6 +41,7 @@ public class NPCView : MonoBehaviour
     {
         if (npc.dead || npc.type == NPCType.red && npc.examinate || npc.alert || npc.hidden != 0)
             Destroy(mesh);
+
         else if (mesh == null)
             mesh = new Mesh();  
 

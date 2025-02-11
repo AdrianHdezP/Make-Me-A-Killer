@@ -22,6 +22,7 @@ public class CasterCarpet : Caster
     {
         if (!placed)
         {
+            canBePlaced = SetPlaceState();
             if (!canBePlaced) renderer_.color = blockedColor;
             else renderer_.color = castingColor;
         }
@@ -38,7 +39,7 @@ public class CasterCarpet : Caster
         {
             npcs.Add(npc);
         }
-        else if (!placed && !collision.GetComponent<NPC>()) canBePlaced = false;
+        //else if (!placed && !collision.GetComponent<NPC>()) canBePlaced = false;
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -47,7 +48,7 @@ public class CasterCarpet : Caster
             npcs.Remove(npc);
         }
 
-        if (!placed) canBePlaced = true;
+       // if (!placed) canBePlaced = true;
     }
 
     public override void Place()

@@ -10,14 +10,14 @@ public class TVState : NPCState
     {
         base.Enter();
 
-        NPC.tvEmote.SetActive(true);
+        npc.tvEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        NPC.tvEmote.SetActive(false);
+        npc.tvEmote.SetActive(false);
     }
 
     public override void Update()
@@ -25,6 +25,6 @@ public class TVState : NPCState
         base.Update();
 
         if (stateTimer <= 0)
-            stateMachine.ChangeState(NPC.moveState);
+            stateMachine.ChangeState(npc.moveState);
     }
 }

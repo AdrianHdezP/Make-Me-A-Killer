@@ -34,8 +34,8 @@ public class CameraController : MonoBehaviour
 
     void Move()
     {
-        float xKeys = Input.GetAxisRaw("Horizontal") * moveSpeed;
-        float yKeys = Input.GetAxisRaw("Vertical") * moveSpeed;
+        float xKeys = Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime;
+        float yKeys = Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime;
 
         Vector3 newPos = transform.position;
 

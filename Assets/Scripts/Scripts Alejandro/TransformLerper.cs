@@ -20,7 +20,7 @@ public class TransformLerper : MonoBehaviour
         cardHolder = GetComponentInParent<CardHolder>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (locked) return;
 

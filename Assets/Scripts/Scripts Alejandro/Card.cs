@@ -52,12 +52,22 @@ public class Card : MonoBehaviour
     void SetOpacity()
     {
         Color color = cardImage.color;
-        color.a = Mathf.Clamp(1 -(transform.position.y - screenController.minY) / ((screenController.screenH * 0.45f) - screenController.minY), 0.2f, 1f);
+
+        if (transform.position.y > screenController.minY + screenController.screenH * 0.15f)
+        {
+            color.a = 0.2f;
+        }
+        else
+        {
+            color.a = 1;
+        }
+
+        // color.a = Mathf.Clamp(1 -(transform.position.y - screenController.minY) / ((screenController.screenH * 0.45f) - screenController.minY), 0.2f, 1f);
         cardImage.color = color;
     }
     public void TryConsumeCard()
     {
-        if (transform.position.y > screenController.minY + screenController.screenH * 0.35f)
+        if (transform.position.y > screenController.minY + screenController.screenH * 0.15f)
         {      
             InvokeController.i.StartCast(castObject, this);              
             beenCasted = true;

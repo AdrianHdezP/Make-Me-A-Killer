@@ -10,14 +10,14 @@ public class DanceState : NPCState
     {
         base.Enter();
 
-        NPC.danceEmote.SetActive(true);
+        npc.danceEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        NPC.danceEmote.SetActive(false);
+        npc.danceEmote.SetActive(false);
     }
 
     public override void Update()
@@ -25,6 +25,6 @@ public class DanceState : NPCState
         base.Update();
 
         if (stateTimer <= 0)
-            stateMachine.ChangeState(NPC.moveState);
+            stateMachine.ChangeState(npc.moveState);
     }
 }

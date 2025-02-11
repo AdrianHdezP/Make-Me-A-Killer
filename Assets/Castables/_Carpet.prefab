@@ -99,10 +99,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderer_: {fileID: 6771998514747185252}
   collider_: {fileID: 6340453696997645498}
+  floorLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
   placed: 0
   canBePlaced: 1
-  castingColor: {r: 1, g: 1, b: 1, a: 0.6431373}
-  blockedColor: {r: 1, g: 0, b: 0, a: 0.8}
+  castingColor: {r: 0.08962262, g: 0.4162321, b: 1, a: 0.6431373}
+  blockedColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   placedColor: {r: 1, g: 1, b: 1, a: 1}
   carpetAnim: {fileID: 3379187261541983409}
   carpetCardPrefab: {fileID: 8250274633846078295, guid: 53876e0992aa0f54aa52bb418719dd86, type: 3}

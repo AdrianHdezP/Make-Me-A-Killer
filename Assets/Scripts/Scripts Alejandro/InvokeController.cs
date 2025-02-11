@@ -1,6 +1,7 @@
 using NavMeshPlus.Components;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEngine.GraphicsBuffer;
 using static UnityEngine.Rendering.GPUSort;
 
 public class InvokeController : MonoBehaviour
@@ -35,6 +36,8 @@ public class InvokeController : MonoBehaviour
     private void Awake()
     {
         i = this;
+
+        Application.targetFrameRate = 30;
 
         returnToDeckTf.transform.position = new Vector3(returnToDeckTf.transform.position.x, returnToDeckTf.transform.position.y, 0);
         //returnToDeckTf.gameObject.SetActive(false);
@@ -137,7 +140,7 @@ public class InvokeController : MonoBehaviour
     }
     public void TryEndCast()
     {
-        if (currentCast.canBePlaced && Vector3.Distance(currentCast.transform.position, returnToDeckTf.position) > 2f)
+        if (currentCast.canBePlaced && Vector3.Distance(currentCast.transform.position, returnToDeckTf.position) > 1.5f)
         {
             state = InvokeState.none;
 

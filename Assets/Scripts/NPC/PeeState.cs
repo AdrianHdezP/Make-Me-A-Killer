@@ -10,14 +10,14 @@ public class PeeState : NPCState
     {
         base.Enter();
 
-        NPC.peeEmote.SetActive(true);
+        npc.peeEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        NPC.peeEmote.SetActive(false);
+        npc.peeEmote.SetActive(false);
     }
 
     public override void Update()
@@ -25,6 +25,6 @@ public class PeeState : NPCState
         base.Update();
 
         if (stateTimer <= 0)
-            stateMachine.ChangeState(NPC.moveState);
+            stateMachine.ChangeState(npc.moveState);
     }
 }

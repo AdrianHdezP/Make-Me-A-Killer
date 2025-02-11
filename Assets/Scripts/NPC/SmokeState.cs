@@ -10,14 +10,14 @@ public class SmokeState : NPCState
     {
         base.Enter();
 
-        NPC.smokeEmote.SetActive(true);
+        npc.smokeEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        NPC.smokeEmote.SetActive(false);
+        npc.smokeEmote.SetActive(false);
     }
 
     public override void Update()
@@ -25,6 +25,6 @@ public class SmokeState : NPCState
         base.Update();
 
         if (stateTimer <= 0)
-            stateMachine.ChangeState(NPC.moveState);
+            stateMachine.ChangeState(npc.moveState);
     }
 }

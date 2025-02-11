@@ -252,7 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
   targetRotation: {x: 0, y: 0, z: 0, w: 0}
-  positionSpeed: 1
+  positionSpeed: 5
   rotationSpeed: 3
   locked: 0
 --- !u!114 &8250274633846078295

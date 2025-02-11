@@ -25,10 +25,10 @@ public class CasterBomb : Caster
 
     private void Update()
     {
-        canBePlaced = colliders.Count > 0 || npcs.Count > 0;
-
         if (!placed)
         {
+            canBePlaced = (colliders.Count > 0 || npcs.Count > 0) && SetPlaceState();
+
             if (!canBePlaced) renderer_.color = blockedColor;
             else renderer_.color = castingColor;
         }

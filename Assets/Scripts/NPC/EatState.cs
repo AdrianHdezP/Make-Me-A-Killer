@@ -10,14 +10,14 @@ public class EatState : NPCState
     {
         base.Enter();
 
-        NPC.eatEmote.SetActive(true);
+        npc.eatEmote.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        NPC.eatEmote.SetActive(false);
+        npc.eatEmote.SetActive(false);
     }
 
     public override void Update()
@@ -25,6 +25,6 @@ public class EatState : NPCState
         base.Update();
 
         if (stateTimer <= 0)
-            stateMachine.ChangeState(NPC.moveState);
+            stateMachine.ChangeState(npc.moveState);
     }
 }
