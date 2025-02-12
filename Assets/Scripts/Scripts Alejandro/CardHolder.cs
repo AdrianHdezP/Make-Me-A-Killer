@@ -46,6 +46,7 @@ public class CardHolder : MonoBehaviour
             }
 
             list.Add(currentLowest);
+            if (currentLowest) currentLowest.transform.SetSiblingIndex(i);
         }
 
         if (selectedDisk == null) currentExtend = -sideSpace;
